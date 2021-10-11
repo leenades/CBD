@@ -41,10 +41,11 @@
           class="navbar-brand d-block d-sm-none"
         >
           <img
-            src="../Assets/Images/Image/cbd-mobile-logo.svg"
+            data-src="../Assets/Images/Image/cbd-mobile-logo.svg"
             alt="Commercial Bank of Dubai"
             width="50"
             height="50"
+            class="lazyload"
           />
         </a>
         <button
@@ -156,30 +157,33 @@
             <li class="nav-item">
               <a href="" class="nav-link"
                 ><img
-                  src="../Assets/Images/Icons/translate.svg"
+                  data-src="../Assets/Images/Icons/translate.svg"
                   alt=""
                   width="15"
                   height="15"
+                  class="lazyload"
                 />عربي</a
               >
             </li>
             <li class="nav-item">
               <a href="" class="nav-link"
                 ><img
-                  src="../Assets/Images/Icons/pinlocation.svg"
+                  data-src="../Assets/Images/Icons/pinlocation.svg"
                   alt=""
                   width="15"
                   height="15"
+                  class="lazyload"
                 />Location</a
               >
             </li>
             <li class="nav-item">
               <a href="" class="nav-link"
                 ><img
-                  src="../Assets/Images/Icons/help.svg"
+                  data-src="../Assets/Images/Icons/help.svg"
                   alt=""
                   width="15"
                   height="15"
+                  class="lazyload"
                 />Help</a
               >
             </li>
@@ -204,10 +208,11 @@
               rel=""
               aria-label="Commercial Bank of Dubai"
               ><img
-                src="../Assets/Images/Image/cbd-light-logo.svg"
-                alt="230"
-                width=""
+                data-src="../Assets/Images/Image/cbd-light-logo.svg"
+                alt="CBD logo"
+                width="229"
                 height="50"
+                class="lazyload"
             /></a>
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
@@ -343,10 +348,11 @@
                             <a
                               ><div class="d-flex">
                                 <img
-                                  src="../Assets/Images/Image/elite-banking.png"
-                                  alt=""
+                                  data-src="../Assets/Images/Image/elite-banking.webp"
+                                  alt="Elite Banking"
                                   width="145"
                                   height="120"
+                                  class="lazyload"
                                 />
                                 <div class="image-and-title-container">
                                   <h6>Elite Banking</h6>
@@ -362,10 +368,11 @@
                             <a
                               ><div class="d-flex">
                                 <img
-                                  src="../Assets/Images/Image/private-banking.png"
-                                  alt=""
+                                  data-src="../Assets/Images/Image/private-banking.webp"
+                                  alt="private banking"
                                   width="145"
                                   height="120"
+                                  class="lazyload"
                                 />
 
                                 <div class="image-and-title-container">
@@ -476,10 +483,11 @@
                       <div class="col">
                         <div class="inner-nav-item-image-container">
                           <img
-                            src="../Assets/Images/Image/getapp.png"
-                            alt=""
+                            data-src="../Assets/Images/Image/getapp.webp"
+                            alt="image of cbd app"
                             width="309"
                             height="398"
+                            class="lazyload"
                           />
                           <div class="inner-nav-item-image-title">
                             <h6>One bank for all your needs</h6>
@@ -570,10 +578,11 @@
                       <div class="col">
                         <div class="inner-nav-item-image-container">
                           <img
-                            src="../Assets/Images/Image/getsupport.png"
-                            alt=""
+                            data-src="../Assets/Images/Image/getsupport.webp"
+                            alt="need assistance from cbd customer service?"
                             width="309"
                             height="200"
+                            class="lazyload"
                           />
                           <div class="inner-nav-item-image-title">
                             <h6>Need help?</h6>
@@ -620,6 +629,7 @@
         <div class="main-header-contents">
           <div class="header-title">
             <h1>Say hello to the new generation of banking</h1>
+            <p>Voted Best Digital Bank in the UAE.</p>
           </div>
           <div class="button-container">
             <button class="btn btn-white" aria-label="">Join Now</button>
@@ -642,10 +652,7 @@
           muted="muted"
           loop="loop"
         >
-          <source
-            src="../Assets/Video/305013_Woman_Phone_Texting_Coffee_Shop_by_Anna_Tolipova_Artgrid-HD_H264-HD.mp4"
-            type="video/mp4"
-          />
+          <source src="../Assets/Video/womanphone_vid.webm" type="video/mp4" />
         </video>
       </div>
     </section>
@@ -682,7 +689,11 @@
                     <span id="valid-msg" class="d-none valid-msg">✓ Valid</span>
                     <span id="error-msg" class="hide error-msg"></span>
                   </div>
-                  <button class="btn btn-modal float-end" id="signUpContinueBtn" disabled>
+                  <button
+                    class="btn btn-modal float-end"
+                    id="signUpContinueBtn"
+                    disabled
+                  >
                     Continue
                   </button>
                 </div>
@@ -690,20 +701,19 @@
               <div class="col modal-body-col-2">
                 <picture>
                   <source
-                    srcset="../Assets/Images/Image/signup-modal-middle.png"
-                    media="(min-width: 768px;)"
+                    data-srcset="../Assets/Images/Image/signup-modal-middle.webp"
+                    media="(min-width: 1200px)"
                   />
                   <source
-                    srcset="../Assets/Images/Image/signup-modal-large.png"
-                    media="(min-width: 1200;)"
+                    data-srcset="../Assets/Images/Image/signup-modal-large.webp"
+                    media="(min-width: 320px)"
                   />
                   <img
-                    src="../Assets/Images/Image/signup-modal-middle.png"
+                    data-src="../Assets/Images/Image/signup-modal-middle.webp"
                     alt="sign up modal"
-                    class="modal-image"
+                    class="modal-image lazyload"
                   />
                 </picture>
-                <!-- <img src="" width="654" height="569" alt="" class="modal-image"> -->
               </div>
             </div>
           </div>
@@ -752,87 +762,94 @@
           </div>
         </div>
         <div class="row align-items-baseline sliders-title-arrows">
-          <div class="col-8">
+          <div class="col-lg-8 col">
             <div class="slider-title"><h3 class="m-0">Products</h3></div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col">
             <div id="arrowsAppend" class="arrows-styles"></div>
           </div>
         </div>
         <div class="row">
           <div class="col slider-column-spacing">
-          </div>
-        </div>
-        <div class="js-products-slider-styles w-100">
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider1.png"
-              width="216"
-              height="216"
-              alt="Current account"
-            />
-            <h4>Current Account</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider2.png"
-              width="216"
-              height="216"
-              alt="credit cards"
-            />
-            <h4>Credit Cards</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider3.png"
-              width="216"
-              height="216"
-              alt="Savings"
-            />
-            <h4>Savings</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider4.png"
-              width="216"
-              height="216"
-              alt="Loans"
-            />
-            <h4>Loans</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider5.png"
-              width="216"
-              height="216"
-              alt="investments"
-            />
-            <h4>Investments</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider6.png"
-              width="216"
-              height="216"
-              alt="Ivestments"
-            />
-            <h4>Investments</h4>
-          </div>
-          <div class="image">
-            <img
-              src="../Assets/Images/SliderImages/products/slider1.png"
-              width="216"
-              height="216"
-              alt="ivestments"
-            />
-            <h4>Investments</h4>
+            <div class="js-products-slider-styles w-100">
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider1.webp"
+                  width="216"
+                  height="216"
+                  alt="Current account"
+                  class="lazyload"
+                />
+                <h4>Current Account</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider2.webp"
+                  width="216"
+                  height="216"
+                  alt="credit cards"
+                  class="lazyload"
+                />
+                <h4>Credit Cards</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider3.webp"
+                  width="216"
+                  height="216"
+                  alt="Savings"
+                  class="lazyload"
+                />
+                <h4>Savings</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider4.webp"
+                  width="216"
+                  height="216"
+                  alt="Loans"
+                  class="lazyload"
+                />
+                <h4>Loans</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider5.webp"
+                  width="216"
+                  height="216"
+                  alt="investments"
+                  class="lazyload"
+                />
+                <h4>Investments</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider6.webp"
+                  width="216"
+                  height="216"
+                  alt="Ivestments"
+                  class="lazyload"
+                />
+                <h4>Investments</h4>
+              </div>
+              <div class="image">
+                <img
+                  data-src="../Assets/Images/SliderImages/products/slider1.webp"
+                  width="216"
+                  height="216"
+                  alt="ivestments"
+                  class="lazyload"
+                />
+                <h4>Investments</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="cbd-for-business-section">
       <div class="container">
-        <div class="row">
+        <div class="row row-reverse-inner-elements">
           <div class="col">
             <div class="texts-container">
               <h3>Tools to grow your business online</h3>
@@ -848,9 +865,19 @@
           <div class="col">
             <div class="image-container">
               <picture>
-                <source srcset="../Assets/Images/image/cbd-for-business.png" media="(min-width: 768px;)">
-                <source srcset="" media="(min-width: 1200px;)">
-                <img src="../Assets/Images/Image/cbd-for-business.png" alt="CBD business portal" />
+                <source
+                  data-srcset="../Assets/Images/image/cbd-for-business.webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  data-srcset="../Assets/Images/image/mob/cbd-for-business_mobile.webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  data-src="../Assets/Images/Image/cbd-for-business.webp"
+                  alt="CBD business portal"
+                  class="lazyload"
+                />
               </picture>
             </div>
           </div>
@@ -863,9 +890,19 @@
           <div class="col">
             <div class="image-container">
               <picture>
-                <source srcset="../Assets/Images/Image/get-started.png" media="(min-width: 768px;)">
-                <source srcset="" media="(min-width: 1200px;)">
-                <img src="../Assets/Images/Image/get-started.png" alt="image of CBD IOS mobile app"/>
+                <source
+                  data-srcset="../Assets/Images/Image/get-started.webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  data-srcset="../Assets/Images/Image/mob/get-started_mobile.webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  data-src="../Assets/Images/Image/get-started.webp"
+                  alt="image of CBD IOS mobile app"
+                  class="lazyload"
+                />
               </picture>
             </div>
           </div>
@@ -912,64 +949,71 @@
             <div class="js-benefits-slider-styles w-100">
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider1.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider1.webp"
                   width="243"
                   height="243"
                   alt="Free banking"
+                  class="lazyload"
                 />
                 <h4>Free Banking</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider2.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider2.webp"
                   width="243"
                   height="243"
                   alt="Joining Bonus"
+                  class="lazyload"
                 />
                 <h4>Joining Bonus</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider3.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider3.webp"
                   width="243"
                   height="243"
                   alt="Smiles Rewards"
+                  class="lazyload"
                 />
                 <h4>Smiles Rewards</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider4.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider4.webp"
                   width="243"
                   height="243"
                   alt="Instant Opening"
+                  class="lazyload"
                 />
                 <h4>Instant Opening</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider5.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider5.webp"
                   width="243"
                   height="243"
                   alt="Instant Opening"
+                  class="lazyload"
                 />
                 <h4>Instant Opening</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider1.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider1.webp"
                   width="243"
                   height="243"
                   alt="Instant opening"
+                  class="lazyload"
                 />
                 <h4>Instant Opening</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/benefitsRewards/slider2.png"
+                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider2.webp"
                   width="243"
                   height="243"
                   alt="Instant opening"
+                  class="lazyload"
                 />
                 <h4>Instant Opening</h4>
               </div>
@@ -981,7 +1025,8 @@
     <section class="latest-offers-section">
       <div class="container">
         <div
-          class="row align-items-baseline sliders-title-arrows anchor-arrow-row">
+          class="row align-items-baseline sliders-title-arrows anchor-arrow-row"
+        >
           <div class="col-8">
             <div class="slider-title">
               <h3 class="m-0">Latest offers</h3>
@@ -1005,37 +1050,41 @@
             <div class="js-latest-offers-slider-styles w-100">
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/latestOffers/slider1.png"
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider1.webp"
                   width="243"
                   height="243"
                   alt="Careem discount"
+                  class="lazyload"
                 />
                 <h4>Careem discount</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/latestOffers/slider2.png"
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider2.webp"
                   width="243"
                   height="243"
                   alt="amazon discount"
+                  class="lazyload"
                 />
                 <h4>Amazon discount</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/latestOffers/slider3.png"
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider3.webp"
                   width="243"
                   height="243"
                   alt="35% off JA resorts and hotels"
+                  class="lazyload"
                 />
                 <h4>35% off JA Resorts & Hotels</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/latestOffers/slider4.png"
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider4.webp"
                   width="243"
                   height="243"
                   alt="33% off on stay at accor"
+                  class="lazyload"
                 />
                 <h4>33% off on Stay at Accor</h4>
               </div>
@@ -1060,12 +1109,21 @@
         <div class="row credit-card-img-row">
           <div class="col">
             <div class="img-container">
-              <img
-                src="../Assets/Images/Image/platinumcard.png"
-                width="410"
-                height="264"
-                alt="Platinum card"
-              />
+              <picture>
+                <source
+                  data-srcset="../Assets/Images/Image/platinumcard.webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  data-srcset="../Assets/Images/Image/mob/platinum-card_mobile.webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  data-src="../Assets/Images/Image/platinumcard.webp"
+                  alt="Platinum card"
+                  class="lazyload"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -1087,9 +1145,19 @@
           <div class="col">
             <div class="image-container">
               <picture>
-                <source srcset="../Assets/Images/Image/banner-section-image.png" media="(min-width: 768px;)">
-                <source srcset="" media="(min-width: 1200px;)">
-                <img src="../Assets/Images/Image/banner-section-image.png" alt="image of CBD IOS mobile app"/>
+                <source
+                  data-srcset="../Assets/Images/Image/banner-section-image.webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  data-srcset="../Assets/Images/Image/mob/banner-section-image_mobile.webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  data-src="../Assets/Images/Image/banner-section-image.webp"
+                  alt="image of CBD IOS mobile app"
+                  class="lazyload"
+                />
               </picture>
             </div>
           </div>
@@ -1105,10 +1173,11 @@
               <div class="icons">
                 <span
                   ><img
-                    src="../Assets/Images/Icons/cool.svg"
+                    data-src="../Assets/Images/Icons/cool.svg"
                     width="32"
                     height="32"
                     alt="instant account opening"
+                    class="lazyload"
                   />
                   <h6>Instant account opening</h6></span
                 >
@@ -1117,15 +1186,17 @@
                     width="32"
                     height="32"
                     alt="fast and secure login"
-                    src="../Assets/Images/Icons/lock.svg"
+                    data-src="../Assets/Images/Icons/lock.svg"
+                    class="lazyload"
                   />
                   <h6>Fast & secure log-in</h6></span
                 >
                 <span
                   ><img
-                    src="../Assets/Images/Icons/moneybag.svg"
+                    data-src="../Assets/Images/Icons/moneybag.svg"
                     width="32"
                     height="32"
+                    class="lazyload"
                     alt="fast transfers to 100+ countries"
                   />
                   <h6>Fast transfers to 100+ countries</h6></span
@@ -1166,29 +1237,26 @@
                 </div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-3">
-                  <img
-                    src="../Assets/Images/Image/applepay.png"
-                    width="240"
-                    height="85"
-                    alt="Apple pay"
-                  />
+                <div class="col-lg-3 col">
+                  <picture>
+                    <source data-srcset="../Assets/Images/Image/applepay.webp" media="(min-width: 1200px)" />
+                    <source data-srcset="../Assets/Images/Image/mob/applepay_mobile.webp" media="(min-width: 320px)" />
+                    <img data-src="../Assets/Images/Image/applepay.webp" alt="Apple pay" class="lazyload"/>
+                  </picture>
                 </div>
-                <div class="col-3">
-                  <img
-                    src="../Assets/Images/Image/samsungpay.png"
-                    width="240"
-                    height="85"
-                    alt="Samsung pay"
-                  />
+                <div class="col-lg-3 col">
+                  <picture>
+                    <source data-srcset="../Assets/Images/Image/samsungpay.webp" media="(min-width: 1200px)" />
+                    <source data-srcset="../Assets/Images/Image/mob/samsungpay_mobile.webp" media="(min-width: 320px)" />
+                    <img data-src="../Assets/Images/Image/samsungpay.webp" alt="Samsung pay" class="lazyload"/>
+                  </picture>
                 </div>
-                <div class="col-3">
-                  <img
-                    src="../Assets/Images/Image/googlepay.png"
-                    width="240"
-                    height="85"
-                    alt="Google pay"
-                  />
+                <div class="col-lg-3 col">
+                  <picture>
+                    <source data-srcset="../Assets/Images/Image/googlepay.webp" media="(min-width: 1200px)" />
+                    <source data-srcset="../Assets/Images/Image/mob/googlepay_mobile.webp" media="(min-width: 320px)" />
+                    <img data-src="../Assets/Images/Image/googlepay.webp" alt="google pay" class="lazyload"/>
+                  </picture>
                 </div>
               </div>
             </div>
@@ -1240,9 +1308,19 @@
           <div class="col">
             <div class="image-container">
               <picture>
-                <source srcset="../Assets/Images/Image/banner1.png" media="(min-width: 768px;)">
-                <source srcset="" media="(min-width: ;)">
-                <img src="../Assets/Images/Image/banner1.png" alt="investment plan" />
+                <source
+                  data-srcset="../Assets/Images/Image/banner1.webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  data-srcset="../Assets/Images/Image/mob/banner1_mobile.webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  data-src="../Assets/Images/Image/banner1.webp"
+                  alt="investment plan"
+                  class="lazyload"
+                />
               </picture>
             </div>
           </div>
@@ -1256,10 +1334,11 @@
               >
               <button class="btn btn-blue ms-0">Open CBD Investr</button>
               <img
-                src="../Assets/Images/Image/cbdr-logo.png"
+                data-src="../Assets/Images/Image/cbdr-logo.webp"
                 width="206"
                 height="35"
                 alt="cbd investr logo"
+                class="lazyload"
               />
             </div>
           </div>
@@ -1290,64 +1369,71 @@
             <div class="js-branches-slider-styles w-100">
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider1.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider1.webp"
                   width="216"
                   height="216"
                   alt="current account"
+                  class="lazyload"
                 />
                 <h4>Current Account</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider2.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider2.webp"
                   width="216"
                   height="216"
                   alt="credit cards"
+                  class="lazyload"
                 />
                 <h4>Credit Cards</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider3.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider3.webp"
                   width="216"
                   height="216"
                   alt="savings"
+                  class="lazyload"
                 />
                 <h4>Savings</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider4.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider4.webp"
                   width="216"
                   height="216"
                   alt="loans"
+                  class="lazyload"
                 />
                 <h4>Loans</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider5.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider5.webp"
                   width="216"
                   height="216"
                   alt="investments"
+                  class="lazyload"
                 />
                 <h4>Investments</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider1.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider1.webp"
                   width="216"
                   height="216"
                   alt="investments"
+                  class="lazyload"
                 />
                 <h4>Investments</h4>
               </div>
               <div class="image">
                 <img
-                  src="../Assets/Images/SliderImages/branchesATM/slider2.png"
+                  data-src="../Assets/Images/SliderImages/branchesATM/slider2.webp"
                   width="216"
                   height="216"
                   alt="investments"
+                  class="lazyload"
                 />
                 <h4>Investments</h4>
               </div>
@@ -1545,10 +1631,11 @@
           <div class="col first-column">
             <div class="cbd-logo">
               <img
-                src="../Assets/Images/Image/cbd-light-logo.svg"
+                data-src="../Assets/Images/Image/cbd-light-logo.svg"
                 alt=""
                 width="240"
                 height="50"
+                class="lazyload"
               />
             </div>
             <div class="dropdown-lg">
@@ -1557,10 +1644,11 @@
                   <div class="hidden-option-container">
                     <a class="dropdown-option-hidden"
                       ><img
-                        src="../Assets/Images/Icons/translate.svg"
+                        data-src="../Assets/Images/Icons/translate.svg"
                         width="18"
                         height="18"
-                        alt=""
+                        alt="translate from english to arabic"
+                        class="lazyload"
                       />English
                     </a>
                   </div>
@@ -1575,7 +1663,7 @@
                 </div>
               </div>
             </div>
-            <div class="switch-language">
+            <div class="switch-color">
               <label class="label-switch dark-switch">
                 <input
                   type="checkbox"
@@ -1595,9 +1683,17 @@
           </div>
           <div class="col">
             <div class="footer-title-container">
-              <h6 class="footer-subtitles">SITES</h6>
+              <h6 class="footer-subtitles d-none d-md-block">SITES</h6>
+              <div class="d-md-none " data-bs-target="#sitesID" data-bs-toggle="collapse" aria-expanded="false">
+                <div class="footer-subtitles">SITES
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="footer-list">
+            <ul class="footer-list collapse" id="sitesID">
               <li>
                 <a href="#" aria-label="About us">About Us</a>
               </li>
@@ -1617,9 +1713,17 @@
           </div>
           <div class="col">
             <div class="footer-title-container">
-              <h6 class="footer-subtitles">USEFUL</h6>
+              <h6 class="footer-subtitles d-none d-md-block">USEFUL</h6>
+              <div class="d-md-none " data-bs-target="#usefulID" data-bs-toggle="collapse" aria-expanded="false">
+                <div class="footer-subtitles">USEFUL
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="footer-list">
+            <ul class="footer-list collapse" id="usefulID">
               <li>
                 <a href="#" aria-label="About us">UAE Banks Federation</a>
               </li>
@@ -1636,9 +1740,17 @@
           </div>
           <div class="col">
             <div class="footer-title-container">
-              <h6 class="footer-subtitles">TRANSPARENCY</h6>
+              <h6 class="footer-subtitles d-none d-md-block">TRANSPARENCY</h6>
+              <div class="d-md-none " data-bs-target="#transparencyID" data-bs-toggle="collapse" aria-expanded="false">
+                <div class="footer-subtitles">TRANSPARENCY
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="footer-list">
+            <ul class="footer-list collapse" id="transparencyID">
               <li>
                 <a href="#" aria-label="About us">Fees & charges</a>
               </li>
@@ -1656,9 +1768,17 @@
           </div>
           <div class="col">
             <div class="footer-title-container">
-              <h6 class="footer-subtitles">SUPPORT</h6>
+              <h6 class="footer-subtitles d-none d-md-block">SUPPORT</h6>
+              <div class="d-md-none " data-bs-target="#supportID" data-bs-toggle="collapse" aria-expanded="false">
+                <div class="footer-subtitles">SUPPORT
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="footer-list">
+            <ul class="footer-list collapse" id="supportID">
               <li>
                 <a href="#" aria-label="About us">Get in touch</a>
               </li>
@@ -1686,12 +1806,6 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"
@@ -1707,6 +1821,7 @@
       src="../Plugins/slick/slick/slick.js"
     ></script>
     <script src="../Plugins/intlTelInput/build/js/intlTelInput.js"></script>
+    <script src="../Plugins/lazysizes/lazysizes.min.js" async></script>
     <script src="../JS/script.js"></script>
   </body>
 </html>
