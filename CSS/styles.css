@@ -927,6 +927,19 @@ div.texts-container {
     .footer-section .footer-list.collapse.show {
       display: block;
     }
+    .footer-subtitles .navbar-toggler {
+      display: inline-block;
+    }
+    .mob-title[aria-expanded=true] .navbar-toggler .fa-angle-up {
+      display: block;
+    }
+    .mob-title[aria-expanded=true] .navbar-toggler .fa-angle-down {
+      display: none;
+    }
+    .mob-title[aria-expanded=false] .navbar-toggler .fa-angle-up {
+      display: none;
+    }
+
 }
 /* tablet and ipads breakpoint 481px */
 @media screen and (min-width: 481px) {
