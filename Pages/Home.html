@@ -62,7 +62,7 @@
           </span>
           MENU
         </button>
-        <div class="collapse navbar-collapse" id="mainNavBar">
+        <div class="collapse navbar-collapse d-none d-sm-block">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
             <li class="nav-item">
               <a
@@ -155,43 +155,288 @@
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 menu-list-right">
             <li class="nav-item">
-              <a href="" class="nav-link"
-                ><img
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/translate-light.svg"
+                  alt="language translation dark-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload"
+                />
+                <img
                   data-src="../Assets/Images/Icons/translate.svg"
-                  alt=""
+                  alt="language translation light-icon"
                   width="15"
                   height="15"
-                  class="lazyload"
-                />عربي</a
+                  class="lazyload d-none"
+                />
+
+                عربي</a
               >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"
-                ><img
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/pinlocation-light.svg"
+                  alt="pin location dark-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload"
+                />
+                <img
                   data-src="../Assets/Images/Icons/pinlocation.svg"
-                  alt=""
+                  alt="pin location light-icon"
                   width="15"
                   height="15"
-                  class="lazyload"
-                />Location</a
+                  class="lazyload d-none"
+                />
+                Location</a
               >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"
-                ><img
-                  data-src="../Assets/Images/Icons/help.svg"
-                  alt=""
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/help-light.svg"
+                  alt="help dark-icon"
                   width="15"
                   height="15"
                   class="lazyload"
-                />Help</a
+                />
+                <img
+                  data-src="../Assets/Images/Icons/help.svg"
+                  alt="help light-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload d-none"
+                />
+                Help</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse mobile-nav-menu" id="mainNavBar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="personalPageID"
+                aria-label="Personal page"
+                role=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Personal</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="personalPageID">
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Personal Products"
+                    >Products
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="personal digital banking"
+                    >Digital Banking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="More cbd personal options"
+                    >More</a
+                  >
+                </li>
+                <li class="islamic-bank-link">
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="go to islamic banking"
+                    >Go to Islamic Banking<span
+                      ><i class="fas fa-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li class="login-sign-up-inner-item">
+                  <button class="btn btn-white">Login</button>
+                  <button class="btn btn-blue">Sign up</button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="BusinessID"
+                aria-label="Business page"
+                role=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Business</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="BusinessID">
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Personal Products"
+                    >Products
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="personal digital banking"
+                    >Digital Banking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="More cbd personal options"
+                    >More</a
+                  >
+                </li>
+                <li class="islamic-bank-link">
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="go to islamic banking"
+                    >Go to Islamic Banking<span
+                      ><i class="fas fa-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li class="login-sign-up-inner-item">
+                  <button class="btn btn-white">Login</button>
+                  <button class="btn btn-blue">Sign up</button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="AboutUSID"
+                aria-label="about us page"
+                role=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About us</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="AboutUSID">
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Company Information"
+                    >Company Information</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Corporate Governance"
+                    >Corporate Governance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Media Center"
+                    >Media Center</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Careers"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-inner-item-stlyes"
+                    href="#"
+                    aria-label="Contact Us"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 menu-list-right">
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/translate-light.svg"
+                  alt="language translation dark-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload"
+                />
+                <img
+                  data-src="../Assets/Images/Icons/translate.svg"
+                  alt="language translation light-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload d-none"
+                />
+
+                عربي</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/pinlocation-light.svg"
+                  alt="pin location dark-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload"
+                />
+                <img
+                  data-src="../Assets/Images/Icons/pinlocation.svg"
+                  alt="pin location light-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload d-none"
+                />
+                Location</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <img
+                  data-src="../Assets/Images/Icons/help-light.svg"
+                  alt="help dark-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload"
+                />
+                <img
+                  data-src="../Assets/Images/Icons/help.svg"
+                  alt="help light-icon"
+                  width="15"
+                  height="15"
+                  class="lazyload d-none"
+                />
+                Help</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="main-header">
+    <section class="main-header" id="mainHeader">
       <nav
         class="
           navbar navbar-expand-lg navbar-secondary
@@ -249,16 +494,16 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Current Accounts</a>
+                            <a>Current Accounts<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Savings Accounts</a>
+                            <a>Savings Accounts<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Foreign Currency Accounts</a>
+                            <a>Foreign Currency Accounts<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Gold Accounts</a>
+                            <a>Gold Accounts<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                         <div class="dropdown-inner-menu-title">
@@ -266,13 +511,13 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Life Insurance</a>
+                            <a>Life Insurance<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Health Insurance</a>
+                            <a>Health Insurance<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Travel Insurance</a>
+                            <a>Travel Insurance<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -282,13 +527,13 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Credit Cards</a>
+                            <a>Credit Cards<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>E-dirham Cards</a>
+                            <a>E-dirham Cards<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Prepaid Cards</a>
+                            <a>Prepaid Cards<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                         <div class="dropdown-inner-menu-title">
@@ -296,16 +541,16 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>CBD Investr</a>
+                            <a>CBD Investr<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Investment Products</a>
+                            <a>Investment Products<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>CBD FxTradr</a>
+                            <a>CBD FxTradr<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>CBD Financial Services</a>
+                            <a>CBD Financial Services<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -315,13 +560,13 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Auto Loans</a>
+                            <a>Auto Loans<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Mortgage Loans</a>
+                            <a>Mortgage Loans<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Personal Loans</a>
+                            <a>Personal Loans<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                         <div class="dropdown-inner-menu-title">
@@ -329,13 +574,13 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Time Deposit</a>
+                            <a>Time Deposit<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Step up Time Deposit</a>
+                            <a>Step up Time Deposit<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Bonus Booster Deposit</a>
+                            <a>Bonus Booster Deposit<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -423,25 +668,25 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Local Transfers</a>
+                            <a>Local Transfers<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>International Transfers</a>
+                            <a>International Transfers<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Instant Transfers</a>
+                            <a>Instant Transfers<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Investor Relations</a>
+                            <a>Investor Relations<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Apple Pay</a>
+                            <a>Apple Pay<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Google Pay</a>
+                            <a>Google Pay<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Samsung Pay</a>
+                            <a>Samsung Pay<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -451,13 +696,13 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>CBD Mobile App</a>
+                            <a>CBD Mobile App<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Online Banking</a>
+                            <a>Online Banking<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Digital Banking</a>
+                            <a>Digital Banking<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -467,16 +712,16 @@
                         </div>
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>CBD Rewards</a>
+                            <a>CBD Rewards<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>All Offers and Discounts</a>
+                            <a>All Offers and Discounts<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Free Amazon Prime</a>
+                            <a>Free Amazon Prime<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Share and Earn AED 500</a>
+                            <a>Share and Earn AED 500<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -530,48 +775,48 @@
                       <div class="col">
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>SMS Banking</a>
+                            <a>SMS Banking<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Phone Banking</a>
+                            <a>Phone Banking<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Cash Online</a>
+                            <a>Cash Online<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Service Promise</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col">
-                        <ul class="dropdown-inner-menu">
-                          <li class="dropdown-inner-menu-item">
-                            <a>Online Help</a>
-                          </li>
-                          <li class="dropdown-inner-menu-item">
-                            <a>Chat</a>
-                          </li>
-                          <li class="dropdown-inner-menu-item">
-                            <a>Get In Touch</a>
-                          </li>
-                          <li class="dropdown-inner-menu-item">
-                            <a>Locations</a>
+                            <a>Service Promise<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
                       <div class="col">
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
-                            <a>Fees and Charges</a>
+                            <a>Online Help<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Privacy Policy</a>
+                            <a>Chat<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Terms and Conditions</a>
+                            <a>Get In Touch<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
-                            <a>Useful Links</a>
+                            <a>Locations<span><i class="fa fa-arrow-right"></i></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul class="dropdown-inner-menu">
+                          <li class="dropdown-inner-menu-item">
+                            <a>Fees and Charges<span><i class="fa fa-arrow-right"></i></span></a>
+                          </li>
+                          <li class="dropdown-inner-menu-item">
+                            <a>Privacy Policy<span><i class="fa fa-arrow-right"></i></span></a>
+                          </li>
+                          <li class="dropdown-inner-menu-item">
+                            <a>Terms and Conditions<span><i class="fa fa-arrow-right"></i></span></a>
+                          </li>
+                          <li class="dropdown-inner-menu-item">
+                            <a>Useful Links<span><i class="fa fa-arrow-right"></i></span></a>
                           </li>
                         </ul>
                       </div>
@@ -646,12 +891,7 @@
         </div>
       </div>
       <div class="video-background-holder">
-        <video
-          playsinline="playsinline"
-          autoplay="autoplay"
-          muted="muted"
-          loop="loop"
-        >
+        <video playsinline autoplay loop muted>
           <source src="../Assets/Video/womanphone_vid.webm" type="video/mp4" />
         </video>
       </div>
@@ -926,21 +1166,9 @@
         <div
           class="row align-items-baseline sliders-title-arrows anchor-arrow-row"
         >
-          <div class="col-8">
+          <div class="col">
             <div class="slider-title">
               <h3 class="m-0">Benefits & Rewards</h3>
-            </div>
-          </div>
-          <div class="col-4">
-            <div id="benefitsArrowsAppend" class="arrows-styles">
-              <a
-                href="#"
-                target="_blank"
-                rel=""
-                class="view-all-styles"
-                aria-label="View all benefits and rewards"
-                >View all</a
-              >
             </div>
           </div>
         </div>
@@ -987,36 +1215,20 @@
                 />
                 <h4>Instant Opening</h4>
               </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider5.webp"
-                  width="243"
-                  height="243"
-                  alt="Instant Opening"
-                  class="lazyload"
-                />
-                <h4>Instant Opening</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider1.webp"
-                  width="243"
-                  height="243"
-                  alt="Instant opening"
-                  class="lazyload"
-                />
-                <h4>Instant Opening</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/benefitsRewards/slider2.webp"
-                  width="243"
-                  height="243"
-                  alt="Instant opening"
-                  class="lazyload"
-                />
-                <h4>Instant Opening</h4>
-              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="" class="view-all-container">
+              <a
+                href="#"
+                target="_blank"
+                rel=""
+                class="view-all-styles"
+                aria-label="View all benefits and rewards"
+                >View all</a
+              >
             </div>
           </div>
         </div>
@@ -1027,21 +1239,9 @@
         <div
           class="row align-items-baseline sliders-title-arrows anchor-arrow-row"
         >
-          <div class="col-8">
+          <div class="col">
             <div class="slider-title">
               <h3 class="m-0">Latest offers</h3>
-            </div>
-          </div>
-          <div class="col-4">
-            <div id="latestOffersArrowsAppend" class="arrows-styles">
-              <a
-                href="#"
-                target="_blank"
-                rel=""
-                class="view-all-styles"
-                aria-label="View all benefits and rewards"
-                >View all</a
-              >
             </div>
           </div>
         </div>
@@ -1088,6 +1288,40 @@
                 />
                 <h4>33% off on Stay at Accor</h4>
               </div>
+              <div class="image d-block d-md-none">
+                <img
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider5.webp"
+                  width="243"
+                  height="243"
+                  alt="20% off Noon"
+                  class="lazyload"
+                />
+                <h4>20% off Noon</h4>
+              </div>
+              <div class="image d-block d-md-none">
+                <img
+                  data-src="../Assets/Images/SliderImages/latestOffers/slider6.webp"
+                  width="243"
+                  height="243"
+                  alt="Lulu discount"
+                  class="lazyload"
+                />
+                <h4>Lulu discount</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="" class="view-all-container">
+              <a
+                href="#"
+                target="_blank"
+                rel=""
+                class="view-all-styles"
+                aria-label="View all benefits and rewards"
+                >View all</a
+              >
             </div>
           </div>
         </div>
@@ -1236,26 +1470,56 @@
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-center">
+              <div class="row justify-content-center onlinepay-image-container">
                 <div class="col-lg-3 col">
                   <picture>
-                    <source data-srcset="../Assets/Images/Image/applepay.webp" media="(min-width: 1200px)" />
-                    <source data-srcset="../Assets/Images/Image/mob/applepay_mobile.webp" media="(min-width: 320px)" />
-                    <img data-src="../Assets/Images/Image/applepay.webp" alt="Apple pay" class="lazyload"/>
+                    <source
+                      data-srcset="../Assets/Images/Image/applepay.webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/mob/applepay_mobile.webp"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/applepay.webp"
+                      alt="Apple pay"
+                      class="lazyload"
+                    />
                   </picture>
                 </div>
                 <div class="col-lg-3 col">
                   <picture>
-                    <source data-srcset="../Assets/Images/Image/samsungpay.webp" media="(min-width: 1200px)" />
-                    <source data-srcset="../Assets/Images/Image/mob/samsungpay_mobile.webp" media="(min-width: 320px)" />
-                    <img data-src="../Assets/Images/Image/samsungpay.webp" alt="Samsung pay" class="lazyload"/>
+                    <source
+                      data-srcset="../Assets/Images/Image/samsungpay.webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/mob/samsungpay_mobile.webp"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/samsungpay.webp"
+                      alt="Samsung pay"
+                      class="lazyload"
+                    />
                   </picture>
                 </div>
                 <div class="col-lg-3 col">
                   <picture>
-                    <source data-srcset="../Assets/Images/Image/googlepay.webp" media="(min-width: 1200px)" />
-                    <source data-srcset="../Assets/Images/Image/mob/googlepay_mobile.webp" media="(min-width: 320px)" />
-                    <img data-src="../Assets/Images/Image/googlepay.webp" alt="google pay" class="lazyload"/>
+                    <source
+                      data-srcset="../Assets/Images/Image/googlepay.webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/mob/googlepay_mobile.webp"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/googlepay.webp"
+                      alt="google pay"
+                      class="lazyload"
+                    />
                   </picture>
                 </div>
               </div>
@@ -1350,94 +1614,12 @@
         <div class="row w-100 justify-content-center">
           <div class="products-header-title">
             <h2>It’s never too hard to find us</h2>
-            <p>
-              Whether you’re looking for a specific branch or atm function,
-              you’ll find us nearby
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-baseline sliders-title-arrows">
-          <div class="col-8">
-            <div class="slider-title"><h3 class="m-0">Branches & ATMS</h3></div>
-          </div>
-          <div class="col-4">
-            <div id="branchATMArrowsAppend" class="arrows-styles"></div>
+            <p>Find your nearest CBD brnach or ATM</p>
           </div>
         </div>
         <div class="row">
-          <div class="col slider-column-spacing">
-            <div class="js-branches-slider-styles w-100">
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider1.webp"
-                  width="216"
-                  height="216"
-                  alt="current account"
-                  class="lazyload"
-                />
-                <h4>Current Account</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider2.webp"
-                  width="216"
-                  height="216"
-                  alt="credit cards"
-                  class="lazyload"
-                />
-                <h4>Credit Cards</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider3.webp"
-                  width="216"
-                  height="216"
-                  alt="savings"
-                  class="lazyload"
-                />
-                <h4>Savings</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider4.webp"
-                  width="216"
-                  height="216"
-                  alt="loans"
-                  class="lazyload"
-                />
-                <h4>Loans</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider5.webp"
-                  width="216"
-                  height="216"
-                  alt="investments"
-                  class="lazyload"
-                />
-                <h4>Investments</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider1.webp"
-                  width="216"
-                  height="216"
-                  alt="investments"
-                  class="lazyload"
-                />
-                <h4>Investments</h4>
-              </div>
-              <div class="image">
-                <img
-                  data-src="../Assets/Images/SliderImages/branchesATM/slider2.webp"
-                  width="216"
-                  height="216"
-                  alt="investments"
-                  class="lazyload"
-                />
-                <h4>Investments</h4>
-              </div>
-            </div>
+          <div class="col d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qcghzrOVzs6uYBctXDrm8YUJFIpsj5Zd" width="640" height="480"></iframe>
           </div>
         </div>
         <div class="row btn-locations justify-content-center">
@@ -1684,8 +1866,14 @@
           <div class="col">
             <div class="footer-title-container">
               <h6 class="footer-subtitles d-none d-md-block">SITES</h6>
-              <div class="d-md-none mob-title" data-bs-target="#sitesID" data-bs-toggle="collapse" aria-expanded="false">
-                <div class="footer-subtitles">SITES
+              <div
+                class="d-md-none mob-title"
+                data-bs-target="#sitesID"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+              >
+                <div class="footer-subtitles">
+                  SITES
                   <div class="float-right navbar-toggler">
                     <i class="fas fa-angle-down"></i>
                     <i class="fas fa-angle-up"></i>
@@ -1714,8 +1902,14 @@
           <div class="col">
             <div class="footer-title-container">
               <h6 class="footer-subtitles d-none d-md-block">USEFUL</h6>
-              <div class="d-md-none mob-title" data-bs-target="#usefulID" data-bs-toggle="collapse" aria-expanded="false">
-                <div class="footer-subtitles">USEFUL
+              <div
+                class="d-md-none mob-title"
+                data-bs-target="#usefulID"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+              >
+                <div class="footer-subtitles">
+                  USEFUL
                   <div class="float-right navbar-toggler">
                     <i class="fas fa-angle-down"></i>
                     <i class="fas fa-angle-up"></i>
@@ -1741,8 +1935,14 @@
           <div class="col">
             <div class="footer-title-container">
               <h6 class="footer-subtitles d-none d-md-block">TRANSPARENCY</h6>
-              <div class="d-md-none mob-title" data-bs-target="#transparencyID" data-bs-toggle="collapse" aria-expanded="false">
-                <div class="footer-subtitles">TRANSPARENCY
+              <div
+                class="d-md-none mob-title"
+                data-bs-target="#transparencyID"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+              >
+                <div class="footer-subtitles">
+                  TRANSPARENCY
                   <div class="float-right navbar-toggler">
                     <i class="fas fa-angle-down"></i>
                     <i class="fas fa-angle-up"></i>
@@ -1769,8 +1969,14 @@
           <div class="col">
             <div class="footer-title-container">
               <h6 class="footer-subtitles d-none d-md-block">SUPPORT</h6>
-              <div class="d-md-none mob-title" data-bs-target="#supportID" data-bs-toggle="collapse" aria-expanded="false">
-                <div class="footer-subtitles">SUPPORT
+              <div
+                class="d-md-none mob-title"
+                data-bs-target="#supportID"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+              >
+                <div class="footer-subtitles">
+                  SUPPORT
                   <div class="float-right navbar-toggler">
                     <i class="fas fa-angle-down"></i>
                     <i class="fas fa-angle-up"></i>
@@ -1794,8 +2000,25 @@
           <div class="col footer-col-one">
             <div><p>Copyright © 2021 CBD All Rights Reserved.</p></div>
           </div>
-          <div class="col footer-col-two">
+          <div class="col footer-col-two d-none d-md-block">
             <div><p>Site Map</p></div>
+          </div>
+        </div>
+        <div class="row footer-row-three">
+          <div class="col">
+            <div>
+              <p>
+                cbd.ae is the global source of information about and access to
+                financial services provided by the Commercial Bank of Dubai
+                family of companies. The products and services mentioned on this
+                website are not offered to individuals resident in the European
+                Union, European Economic Area, Switzerland, Guernsey, Jersey,
+                Monaco, San Marino, Vatican, The Isle of Man or the UK. The
+                content on this page is not, and should not be construed as, an
+                offer, invitation or solicitation to buy or sell any of the
+                products and services mentioned herein to such individuals.
+              </p>
+            </div>
           </div>
         </div>
       </div>

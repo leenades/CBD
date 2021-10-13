@@ -63,38 +63,12 @@ $(document).ready(function () {
     variableWidth: true,
     lazyLoad: 'ondemand',
   });
-  $(".js-benefits-slider-styles").slick({
-    arrows: true,
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    appendArrows: $("#benefitsArrowsAppend"),
-    variableWidth: true,
-    lazyLoad: 'ondemand',
-  });
-  $(".js-latest-offers-slider-styles").slick({
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    appendArrows: $("#latestOffersArrowsAppend"),
-    variableWidth: true,
-    lazyLoad: 'ondemand',
-  });
   $(".js-awards-slider-styles").slick({
     arrows: true,
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows: $("#awardsArrowsAppend"),
-    variableWidth: true,
-    lazyLoad: 'ondemand',
-  });
-  $(".js-branches-slider-styles").slick({
-    arrows: true,
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    appendArrows: $("#branchATMArrowsAppend"),
     variableWidth: true,
     lazyLoad: 'ondemand',
   });
@@ -109,5 +83,20 @@ $(document).ready(function () {
   });
   $("#darkSwitch").on("click", function () {
     $("#darkSwitch").toggleClass("checked");
+  });
+
+  $(window).on('scroll', function(){
+    var windowTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var windowBottomPos = windowTop + windowHeight;
+
+    var mainHeader =
+      $("#mainHeader").offset().top + $("#mainHeader").height();
+    
+    if(windowBottomPos > mainHeader + 300) {
+      $('.navbar-primary').addClass('fixed-nav');
+    } else {
+      $('.navbar-primary').removeClass('fixed-nav');
+    }
   });
 });
