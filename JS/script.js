@@ -2,7 +2,7 @@
 var input = document.querySelector("#phone"),
   errorMsg = document.querySelector("#error-msg"),
   validMsg = document.querySelector("#valid-msg"),
-  btnContinue = $('#signUpContinueBtn');
+  btnContinue = $("#signUpContinueBtn");
 
 // here, the index maps to the error code returned from getValidationError - see readme
 var errorMap = [
@@ -17,7 +17,7 @@ var iti = window.intlTelInput(input, {
   initialCountry: "ae",
   preferredCountries: ["ae"],
   separateDialCode: true,
-  utilsScript: "../Plugins/intlTelInput/build/js/utils.js?1613236686837"
+  utilsScript: "../Plugins/intlTelInput/build/js/utils.js?1613236686837",
 });
 
 var reset = function () {
@@ -33,15 +33,15 @@ input.addEventListener("blur", function () {
   if (input.value.trim()) {
     if (iti.isValidNumber()) {
       validMsg.classList.remove("d-none");
-      btnContinue.removeAttr('disabled');
-      btnContinue.addClass('btn-blue');
+      btnContinue.removeAttr("disabled");
+      btnContinue.addClass("btn-blue");
     } else {
       input.classList.add("error");
       var errorCode = iti.getValidationError();
       errorMsg.innerHTML = errorMap[errorCode];
       errorMsg.classList.remove("hide");
-      btnContinue.attr('disabled');
-      btnContinue.removeClass('btn-blue');
+      btnContinue.attr("disabled");
+      btnContinue.removeClass("btn-blue");
     }
   }
 });
@@ -55,48 +55,72 @@ $(document).ready(function () {
     $("#darkSwitch").removeClass("checked");
   }
   $(".js-products-slider-styles").slick({
+    dots: true,
     arrows: true,
     infinite: false,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows: $("#arrowsAppend"),
     variableWidth: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
   });
   $(".js-awards-slider-styles").slick({
+    dots: true,
     arrows: true,
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows: $("#awardsArrowsAppend"),
     variableWidth: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          centerMode: true,
+          centerPadding: '60px',
+        },
+      },
+    ],
   });
   $(".js-testimonials-slider-styles").slick({
+    dots: true,
     arrows: true,
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows: $("#testimonialsArrowsAppend"),
     variableWidth: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          centerMode: true,
+          centerPadding: '60px',
+        },
+      },
+    ],
   });
   $("#darkSwitch").on("click", function () {
     $("#darkSwitch").toggleClass("checked");
   });
 
-  $(window).on('scroll', function(){
+  $(window).on("scroll", function () {
     var windowTop = $(window).scrollTop();
     var windowHeight = $(window).height();
     var windowBottomPos = windowTop + windowHeight;
 
-    var mainHeader =
-      $("#mainHeader").offset().top + $("#mainHeader").height();
-    
-    if(windowBottomPos > mainHeader + 300) {
-      $('.navbar-primary').addClass('fixed-nav');
+    var mainHeader = $("#mainHeader").offset().top + $("#mainHeader").height();
+
+    if (windowBottomPos > mainHeader + 300) {
+      $(".navbar-primary").addClass("fixed-nav");
     } else {
-      $('.navbar-primary').removeClass('fixed-nav');
+      $(".navbar-primary").removeClass("fixed-nav");
     }
   });
 });

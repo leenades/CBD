@@ -1,25 +1,34 @@
 /* Global styles */
-html {
-  overflow-x: hidden;
-}
+html,
 body {
   font-family: "Euclid Square", sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
 section:not(.main-header) {
   padding: 100px 0;
+}
+.main-header.bg-neutral {
+  background: #f2f2f7;
+}
+.main-header.bg-neutral .main-header-contents .header-title h1,
+.main-header.bg-neutral .main-header-contents .header-title p,
+.main-header.bg-neutral .main-header-contents .video-link a {
+  color: #020205;
 }
 .latest-offers-section,
 .benefits-and-rewards-section,
 .get-started-section,
 .products-section,
-.banner-center,
 .online-pay-section,
 .awards-section,
 .branches-and-atms-section,
 .testimonials-sections,
 .faq-accordion-section {
   background: #e5e5e5;
+}
+.banner-center {
+  background-color: #f2f2f7;
 }
 .get-started-section .texts-container,
 .cbd-investr-section .texts-container {
@@ -77,31 +86,24 @@ section:not(.main-header) {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
-.main-header {
-  position: relative;
-}
-.main-header .main-header-contents {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
+.main-header-contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
 }
 .main-header .main-header-contents .header-title h1 {
   font-style: normal;
   font-weight: bold;
-  text-align: center;
   color: #ffffff;
 }
 .main-header .main-header-contents .header-title p {
   font-style: normal;
   font-weight: normal;
-  text-align: center;
   color: #ffffff;
 }
 .products-header-title {
@@ -160,14 +162,11 @@ section:not(.main-header) {
 .slider-column-spacing {
   margin-top: 30px;
 }
-section.benefits-and-rewards-section {
-  padding-bottom: 0;
-}
 .js-benefits-slider-styles .image {
   position: relative;
 }
 section.latest-offers-section {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 .js-latest-offers-slider-styles,
 .js-benefits-slider-styles {
@@ -207,12 +206,24 @@ section.latest-offers-section {
   border-radius: 32px;
   border: none;
 }
-.js-latest-offers-slider-styles .image > h4 {
+.slick-dotted .slick-dots li {
+  margin: 0;
+}
+.slick-dotted .slick-dots li button[aria-selected="true"]::before {
   color: #020205;
-  font-size: 16px;
+  opacity: 1;
+}
+.slick-dotted .slick-dots {
+  margin-bottom: -25px;
+}
+.js-products-slider-styles .image > h4,
+.js-latest-offers-slider-styles .image > h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center;
-  font-weight: 400;
-  margin-top: 12px;
+  color: #020205;
 }
 .slick-slider:not(.js-products-slider-styles)
   .slick-list
@@ -221,8 +232,7 @@ section.latest-offers-section {
   > div {
   margin-right: 52px;
 }
-.js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div,
-.js-awards-slider-styles .slick-list .slick-track .slick-slide > div {
+.js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
   width: 243px;
   height: 243px;
 }
@@ -238,8 +248,30 @@ section.latest-offers-section {
   color: #fff;
   font-weight: bold;
 }
+/* carousel styles start */
+.carousel.slide .carousel-indicators {
+  margin-bottom: -48px;
+}
+.carousel-arrows span i {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 100%;
+}
+.carousel.slide .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+}
+.carousel.slide .carousel-indicators button.active {
+  background-color: #181821;
+  opacity: 1;
+}
+.carousel.slide .carousel-indicators button:not(.active) {
+  background-color: rgba(2, 2, 5, 0.2);
+}
+/* carousel styles end */
 .cbd-for-business-section {
-  background: #020205;
+  background: #181821;
 }
 .image-container {
   text-align: center;
@@ -270,6 +302,31 @@ section.latest-offers-section {
   line-height: 24px;
   font-weight: 600;
   letter-spacing: 0.3px;
+}
+.btn-dark-bg {
+  padding: 12px 24px;
+  background: #2b2b3b;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.btn-dark-bg:hover {
+  color: #fff;
+  opacity: 0.75;
+}
+.btn-transparent-bg {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #020205;
+  padding: 12px 24px;
+  border-radius: 12px;
 }
 div.texts-container {
   text-align: center;
@@ -316,27 +373,28 @@ div.texts-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
 }
 .banner-center .text-container .icons {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .banner-center .text-container .icons > span {
-  width: 100px;
-  margin: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 24px;
 }
 .banner-center .text-container .icons span > img {
-  margin-bottom: 8px;
+  margin-right: 8px;
 }
 .banner-center .text-container .banner-center-title {
   font-style: normal;
   font-weight: bold;
   font-size: 44px;
   line-height: 48px;
-  text-align: center;
+  text-align: left;
   color: #020205;
   margin-bottom: 24px;
 }
@@ -345,7 +403,7 @@ div.texts-container {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   color: #020205;
   margin-bottom: 48px;
 }
@@ -354,7 +412,7 @@ div.texts-container {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.2px;
   color: #020205;
 }
@@ -372,26 +430,34 @@ div.texts-container {
   color: #007e8f;
 }
 .cbd-investr-section {
-  background: linear-gradient(
-    -140.64deg,
-    #84f588 12%,
-    rgb(255 255 255) 30% 70%,
-    #6beafc 88%
-  );
+  position: relative;
+}
+.cbd-investr-section > picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.cbd-investr-section > picture img {
+  width: 100%;
+  height: 100%;
 }
 .cbd-investr-section .texts-container > img {
   margin-top: 48px;
 }
-.online-pay-section .online-pay-container .online-pay-title {
+.online-pay-title {
   font-style: normal;
   font-weight: bold;
   font-size: 44px;
   line-height: 48px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
-.online-pay-section .online-pay-container .online-pay-paragraph {
+
+.online-pay-paragraph {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -400,7 +466,7 @@ div.texts-container {
   color: #ffffff;
   margin-bottom: 28px;
 }
-.online-pay-section .online-pay-container .banner-content-link {
+.banner-content-link {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -409,12 +475,10 @@ div.texts-container {
   letter-spacing: 0.3px;
   margin-bottom: 28px;
 }
-.online-pay-section .online-pay-container .banner-content-link > a {
+.banner-content-link > a {
   color: #fff;
   text-decoration: none;
 }
-
-.js-awards-slider-styles .slick-list .slick-track .slick-slide div .image,
 .js-testimonials-slider-styles
   .slick-list
   .slick-track
@@ -430,6 +494,26 @@ div.texts-container {
   justify-content: center;
   align-items: center;
 }
+.js-awards-slider-styles .slick-list .slick-track .slick-slide div .image > h4 {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.js-testimonials-slider-styles
+  .slick-list
+  .slick-track
+  .slick-slide
+  div
+  .image
+  > h4 {
+  color: #020205;
+}
 .js-awards-slider-styles .slick-list .slick-track .slick-slide div .image > h4,
 .js-testimonials-slider-styles
   .slick-list
@@ -444,7 +528,6 @@ div.texts-container {
   line-height: 36px;
   text-align: center;
   letter-spacing: 0.3px;
-  color: #020205;
   margin: 0 24px;
 }
 
@@ -487,6 +570,7 @@ div.texts-container {
   padding: 32px 37px 32px 32px;
   background-color: #fff;
   border-radius: 16px;
+  box-shadow: none;
 }
 .faq-accordion-section
   .accordion
@@ -809,28 +893,57 @@ input.checked + span.label::after {
   }
 }
 /* sign up login modal end  */
-.online-pay-section .online-pay-container {
-  border-radius: 36px;
+.online-pay-section .online-pay-container,
+.location-container {
+  border-radius: 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
 }
-.branches-and-atms-section iframe {
-  border: 0;
-  max-width: 80%;
-  width: 100%;
-  border-radius: 12px;
-}
-
 /* Global styles end*/
+
+.accordion-header .accordion-sidebutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9;
+  margin-right: 5rem;
+}
+.accordion-header {
+  position: relative;
+}
+.accordion-innerbody h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.accordion-body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205;
+}
 
 /* mobile breakpoint 320px */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .location-container {
+    background-image: url(../Assets/Images/Image/mob/skyscraper_mobile.webp);
+  }
   .online-pay-section .online-pay-container {
-    text-align: center;
-    padding: 56px 0;
-    position: relative;
     background-image: url(../Assets/Images/Image/mob/linear-background_mobile.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .onlinepay-image-container {
     flex-direction: column;
@@ -1004,7 +1117,6 @@ input.checked + span.label::after {
   .main-header .main-header-contents .header-title h1 {
     font-size: 36px;
     line-height: 44px;
-    padding: 0 2rem;
   }
   .main-header .main-header-contents .header-title p {
     font-size: 16px;
@@ -1055,6 +1167,11 @@ input.checked + span.label::after {
   .view-all-container {
     text-align: center;
     margin-top: 38px;
+  }
+  .js-awards-slider-styles .slick-list .slick-track .slick-slide > div,
+  .js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
+    margin-right: 30px;
+    margin-left: 30px;
   }
   /* sliders and products section mobile styles end */
 
@@ -1173,19 +1290,19 @@ input.checked + span.label::after {
     justify-content: space-between;
     align-items: center;
   }
-  .dropdown-inner-menu .dropdown-inner-menu-item > a{
+  .dropdown-inner-menu .dropdown-inner-menu-item > a {
     padding: 12px 20px;
   }
-  .dropdown-inner-menu-item:hover{
+  .dropdown-inner-menu-item:hover {
     background: #00000014;
     border-radius: 8px;
   }
   .dropdown-inner-menu-item:hover a {
     color: #02b8d1 !important;
   }
-  .dropdown-inner-menu-item a span > i{
+  .dropdown-inner-menu-item a span > i {
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .dropdown-inner-menu-item:hover a span > i {
     opacity: 1;
@@ -1395,10 +1512,14 @@ input.checked + span.label::after {
   }
   .main-header {
     height: 90vh;
+    position: relative;
   }
   .video-background-holder {
     height: 100%;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -2;
   }
   .main-header .video-background-holder video {
     width: 100%;
@@ -1414,9 +1535,6 @@ input.checked + span.label::after {
     font-size: 18px;
     line-height: 28px;
   }
-  .button-container {
-    margin-bottom: 62px;
-  }
   .btn-white {
     border-radius: 12px;
     color: #000;
@@ -1424,7 +1542,6 @@ input.checked + span.label::after {
     padding: 10px 24px;
     font-weight: 600;
     font-size: 18px;
-    margin-right: 16px;
     letter-spacing: 0.3px;
   }
   .btn-blue {
@@ -1504,13 +1621,10 @@ input.checked + span.label::after {
 
   /* online pay start */
   .online-pay-section .online-pay-container {
-    text-align: center;
-    padding: 56px 0;
-    position: relative;
     background-image: url("../Assets/Images/Image/linear-background.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  .location-container {
+    background-image: url(../Assets/Images/Image/skyscraper.webp);
   }
   .online-pay-section .online-pay-container > img {
     position: absolute;
@@ -1522,10 +1636,7 @@ input.checked + span.label::after {
   /* online pay end */
 
   /* awards and testimonials styles start*/
-  .awards-section .products-header-title,
-  .testimonials-sections .products-header-title {
-    padding: 0 15rem;
-  }
+
   /* awards and testimonials styles end */
 
   /* branches and atms section start */
