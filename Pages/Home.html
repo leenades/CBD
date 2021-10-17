@@ -31,7 +31,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-primary">
+    <nav class="navbar navbar-expand-lg navbar-primary" id="navBarPrimary">
       <div class="container">
         <a
           href="Home.html"
@@ -69,8 +69,8 @@
                 href="#"
                 class="nav-link"
                 aria-current="page"
-                aria-label="Products"
-                >Products</a
+                aria-label="Personal"
+                >Personal</a
               >
             </li>
             <li class="nav-item dropdown">
@@ -214,6 +214,7 @@
             </li>
           </ul>
         </div>
+        <!-- mobile menu -->
         <div class="collapse navbar-collapse mobile-nav-menu" id="mainNavBar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
             <li class="nav-item dropdown">
@@ -468,11 +469,11 @@
                     href="#"
                     class="nav-link dropdown-toggle"
                     id="personalDropDownMenu"
-                    aria-label="Personal page"
+                    aria-label="Products page"
                     role=""
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    >Personal</a
+                    >Products</a
                   >
                   <div
                     class="dropdown-menu secondary-nav-inner-dropdowns"
@@ -1010,7 +1011,9 @@
       <div class="container main-header-container h-100">
         <div class="main-header-contents">
           <div class="header-title">
-            <h1 class="text-center px-3">Say hello to the new generation of banking</h1>
+            <h1 class="text-center px-3">
+              Say hello to the new generation of banking
+            </h1>
             <p class="text-center">Voted Best Digital Bank in the UAE.</p>
           </div>
           <div class="button-container text-center">
@@ -2202,7 +2205,7 @@
           </div>
         </div>
       </nav>
-      <div class="container main-header-container h-100">
+      <div class="container main-header-container h-100 header-side-image">
         <div class="row justify-content-between flex-column-reverse flex-md-row">
           <div class="col-md-6 col">
             <div class="main-header-contents">
@@ -2227,11 +2230,11 @@
           <div class="col-md-5 col">
             <div class="image-container mb-0">
               <picture>
-                <source data-srcset="../Assets/Images/Image/img1.webp" media="(min-width: 1200px)">
-                <source data-srcset="../Assets/Images/Image/mob/img1_mob.webp" media="(min-width: 320px)">
+                <source data-srcset="../Assets/Images/Image/img_header.webp" media="(min-width: 1200px)">
+                <source data-srcset="../Assets/Images/Image/mob/img_header_mob.webp" media="(min-width: 320px)">
                 <img
-                data-src="../Assets/Images/Image/img1.webp"
-                class="d-block lazyload"
+                data-src="../Assets/Images/Image/img_header.webp"
+                class="lazyload"
                 alt="..."
               />
               </picture>
@@ -2340,7 +2343,7 @@
     </div>
     <section class="products-section">
       <div class="container">
-        <div class="row w-100 justify-content-center">
+        <div class="row justify-content-center">
           <div class="products-header-title">
             <h2>The best banking products for you</h2>
           </div>
@@ -2552,7 +2555,9 @@
     </section>
     <section class="get-started-section">
       <div class="container">
-        <div class="row justify-content-between flex-column-reverse flex-md-row">
+        <div
+          class="row justify-content-between flex-column-reverse flex-md-row"
+        >
           <div class="col mt-md-0 mt-5">
             <div class="texts-container">
               <h3>One bank for all your needs</h3>
@@ -2861,6 +2866,7 @@
         </div>
       </div>
     </section>
+    <!-- image left text right section -->
     <section class="banner-center">
       <div class="container">
         <div class="row justify-content-between flex-column flex-md-row">
@@ -2995,9 +3001,12 @@
         </div>
       </div>
     </section>
+    <!-- text left image right section -->
     <section class="banner-center">
       <div class="container">
-        <div class="row justify-content-between flex-column-reverse flex-md-row">
+        <div
+          class="row justify-content-between flex-column-reverse flex-md-row"
+        >
           <div class="col-md-6 col mt-md-0 mt-5">
             <div class="text-container">
               <h3 class="banner-center-title">UAE’s best banking app</h3>
@@ -3129,6 +3138,228 @@
         </div>
       </div>
     </section>
+    <!-- text small image left image button right section  -->
+    <section class="banner-center extended-banner-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col products-header-title">
+            <h2>Write a catchy and compelling header here</h2>
+            <p class="subtitle-styles">Here’s your subtitle</p>
+            <p>
+              You can write a nice long paragraph here that goes on and on for
+              one or two lines.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row justify-content-between flex-column-reverse flex-md-row"
+        >
+          <div class="col mt-md-0 mt-5">
+            <div class="title-tag-styles row">
+              <div class="col-md-9 col">
+                <h3 class="banner-center-title">Write a catchy title here</h3>
+              </div>
+              <div class="col-md-3 col">
+                <span class="insert-tag-styles">insert tag here</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6 class="subtitle-styles">Here’s your subtitle</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span><p>You can write a nice long paragraph here.</p></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul class="banner-list-styles">
+                  <li>Interesting point</li>
+                  <li>Interesting point</li>
+                  <li>Interesting point</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="icons">
+                  <span
+                    ><img
+                      data-src="../Assets/Images/Icons/cool.svg"
+                      width="32"
+                      height="32"
+                      alt="instant account opening"
+                      class="lazyload"
+                    />
+                    <h6>Interesting label</h6></span
+                  >
+                  <span
+                    ><img
+                      width="32"
+                      height="32"
+                      alt="fast and secure login"
+                      data-src="../Assets/Images/Icons/lock.svg"
+                      class="lazyload"
+                    />
+                    <h6>Interesting label</h6></span
+                  >
+                  <span
+                    ><img
+                      data-src="../Assets/Images/Icons/moneybag.svg"
+                      width="32"
+                      height="32"
+                      class="lazyload"
+                      alt="fast transfers to 100+ countries"
+                    />
+                    <h6>Interesting label</h6></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mt-md-5 mt-4 mb-md-5 mb-0">
+              <button class="btn btn-blue-darktext">CTA one</button>
+              <button class="btn btn-transparent-bg mx-1">CTA two</button>
+            </div>
+            <div class="row d-md-block d-none">
+              <div class="col">
+                <picture>
+                  <source
+                    data-srcset="../Assets/Images/Image/displayBox1.png"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    data-src="../Assets/Images/Image/displayBox1.png"
+                    class="lazyload"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-md-0 mb-5">
+            <div class="row">
+              <div class="col">
+                <div
+                  id="carouselExampleIndicatorsBannerRightTwo"
+                  class="carousel slide mb-5"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicatorsBannerRightTwo"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicatorsBannerRightTwo"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicatorsBannerRightTwo"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <picture>
+                        <source
+                          data-srcset="../Assets/Images/Image/img2.png"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          data-srcset="../Assets/Images/Image/mob/img2_mob.png"
+                          media="(min-width: 320px)"
+                        />
+                        <img
+                          data-src="../Assets/Images/Image/img2.png"
+                          class="lazyload w-100"
+                          alt="..."
+                        />
+                      </picture>
+                    </div>
+                    <div class="carousel-item">
+                      <picture>
+                        <source
+                          data-srcset="../Assets/Images/Image/img2.png"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          data-srcset="../Assets/Images/Image/mob/img2_mob.png"
+                          media="(min-width: 320px)"
+                        />
+                        <img
+                          data-src="../Assets/Images/Image/img2.png"
+                          class="lazyload w-100"
+                          alt="..."
+                        />
+                      </picture>
+                    </div>
+                    <div class="carousel-item">
+                      <picture>
+                        <source
+                          data-srcset="../Assets/Images/Image/img2.png"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          data-srcset="../Assets/Images/Image/mob/img2_mob.png"
+                          media="(min-width: 320px)"
+                        />
+                        <img
+                          data-src="../Assets/Images/Image/img2.png"
+                          class="lazyload w-100"
+                          alt="..."
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev carousel-arrows"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicatorsBannerRightTwo"
+                    data-bs-slide="prev"
+                  >
+                    <span aria-hidden="true"
+                      ><i class="fas fa-arrow-left"></i
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next carousel-arrows"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicatorsBannerRightTwo"
+                    data-bs-slide="next"
+                  >
+                    <span aria-hidden="true"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="mt-md-5 mt-4 mb-md-5 mb-0 text-center">
+                  <button class="btn btn-blue-darktext">CTA one</button>
+                  <button class="btn btn-transparent-bg mx-1">CTA two</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- online pay section with no buttons -->
     <section class="online-pay-section">
       <div class="container">
         <div class="row">
@@ -3213,9 +3444,106 @@
         </div>
       </div>
     </section>
+
+    <!-- online pay section with buttons -->
+
+    <section class="online-pay-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="online-pay-container">
+              <div class="row">
+                <div class="col">
+                  <h3 class="online-pay-title">
+                    Write a catchy and compelling header here
+                  </h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h6 class="subtitle-light-styles">Here is your subtitle</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="online-pay-paragraph">
+                    You can write a nice long paragraph here that goes on and on
+                    for one or two lines.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <button class="btn btn-blue-darktext">CTA one</button>
+                    <button class="btn btn-transparent-bg light-text mx-1">
+                      CTA two
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center onlinepay-image-container">
+                <div class="col-lg-3 col mb-md-0 mb-4">
+                  <picture>
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/displayBox2.png"
+                      alt="Apple pay"
+                      class="lazyload"
+                    />
+                  </picture>
+                </div>
+                <div class="col-lg-3 col mb-md-0 mb-4">
+                  <picture>
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/displayBox2.png"
+                      alt="Apple pay"
+                      class="lazyload"
+                    />
+                  </picture>
+                </div>
+                <div class="col-lg-3 col">
+                  <picture>
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      data-srcset="../Assets/Images/Image/displayBox2.png"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      data-src="../Assets/Images/Image/displayBox2.png"
+                      alt="Apple pay"
+                      class="lazyload"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="awards-section">
       <div class="container">
-        <div class="row w-100 justify-content-center">
+        <div class="row justify-content-center">
           <div class="col products-header-title">
             <h2>The #1 mobile banking provider in the UAE</h2>
           </div>
@@ -3375,7 +3703,7 @@
     </section>
     <section class="testimonials-sections">
       <div class="container">
-        <div class="row w-100 justify-content-center">
+        <div class="row justify-content-center">
           <div class="col products-header-title">
             <h2>The Bank of Choice for thousands across the region</h2>
             <p>Here’s what our customers have to say.</p>
@@ -3416,9 +3744,96 @@
         </div>
       </div>
     </section>
+    <section class="counter-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col products-header-title">
+            <h2>Write a catchy and compelling header here</h2>
+            <p class="subtitle-styles">Here’s your subtitle</p>
+            <p>
+              You can write a nice long paragraph here that goes on and on for
+              one or two lines.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 col">
+            <div class="row counter-row-one">
+              <div class="col-6">
+                <div class="card">
+                  <div class="card-header"><h6>Interesting point</h6></div>
+                  <div class="card-body">
+                    <a href="#" class="subtractionOp"><i class="fas fa-minus"></i></a>
+                    <!-- <h6 class="counter-numbers">1,000.<small>00</small></h6> -->
+                    <input class="counter" type="number" value="1000.00">
+                    <a href="#" class="additionOp"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <div class="card-header"><h6>Interesting point</h6></div>
+                  <div class="card-body">
+                    <a href="#" class="subtractionOp"><i class="fas fa-minus"></i></a>
+                    <!-- <h6 class="counter-numbers">1,000.<small>00</small></h6> -->
+                    <input class="counter" type="number" value="1000.00">
+                    <a href="#" class="additionOp"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row counter-row-two">
+              <div class="col-6">
+                <div class="card">
+                  <div class="card-header"><h6>Interesting point</h6></div>
+                  <div class="card-body">
+                    <a href="#" class="subtractionOp"><i class="fas fa-minus"></i></a>
+                    <!-- <h6 class="counter-numbers">1,000.<small>00</small></h6> -->
+                    <input class="counter" type="number" value="1000.00">
+                    <a href="#" class="additionOp"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <div class="card-header"><h6>Interesting point</h6></div>
+                  <div class="card-body">
+                    <a href="#" class="subtractionOp"><i class="fas fa-minus"></i></a>
+                    <!-- <h6 class="counter-numbers">1,000.<small>00</small></h6> -->
+                    <input class="counter" type="number" value="1000.00">
+                    <a href="#" class="additionOp"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col column-card-two">
+            <div class="card card-col-two">
+              <div class="card-header"><h6>Label here</h6></div>
+              <div class="card-body">
+                  <span class="insert-tag-styles">insert tag here</span>
+                  <h6>1,000.<small>00</small></h6>
+                  <p>/ per month</p>
+              </div>
+              <div class="card-footer">
+                <p>*insert information here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mt-md-5 mt-4 mb-0 text-center">
+              <button class="btn btn-blue-darktext">CTA one</button>
+              <button class="btn btn-transparent-bg mx-1">CTA two</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="faq-accordion-section">
       <div class="container">
-        <div class="row w-100 justify-content-center">
+        <div class="row justify-content-center">
           <div class="col products-header-title">
             <h2>FAQs</h2>
             <p>Find the answer to your questions.</p>
