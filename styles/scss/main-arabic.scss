@@ -61,15 +61,15 @@
   }
 }
 .accordion-list {
-    .accordion-list-item {
-        padding-right: 16px;
-        padding-left: 0;
-        &::before {
-            right: -29px;
-            left: 0;
-        }
+  .accordion-list-item {
+    padding-right: 16px;
+    padding-left: 0;
+    &::before {
+      right: -29px;
+      left: 0;
     }
-} 
+  }
+}
 .modal-body-col-1 {
   .signup-content {
     .sign-up-input {
@@ -78,7 +78,7 @@
       }
     }
   }
-} 
+}
 @media screen and (min-width: 768px) {
   .main-header {
     .main-header-contents {
@@ -123,5 +123,46 @@
         }
       }
     }
+  }
+  .dropdown-menu-title {
+    text-align: right;
+    h4 {
+      margin-right: 0;
+      margin-left: 31px;
+    }
+    a {
+      span {
+        > i {
+          margin-left: 0;
+          margin-right: 15px;
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+  .dropdown-inner-menu-title {
+    h6 {
+      text-align: right;
+    }
+  }
+  .dropdown-inner-menu {
+    .dropdown-inner-menu-item {
+      margin-left: 0;
+      margin-right: -20px;
+    }
+  }
+  .dropdown-inner-menu-item {
+    a {
+      span {
+        > i {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+  .image-and-title-container {
+    padding-left: 0;
+    padding-right: 18px;
+    text-align: right;
   }
 }

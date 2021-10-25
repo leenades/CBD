@@ -69,4 +69,24 @@
     margin-right: 0px;
     padding-right: 0px; }
     .navbar-primary .menu-list-left .nav-item .nav-link::after {
-      margin-right: 11px; } }
+      margin-right: 11px; }
+  .dropdown-menu-title {
+    text-align: right; }
+    .dropdown-menu-title h4 {
+      margin-right: 0;
+      margin-left: 31px; }
+    .dropdown-menu-title a span > i {
+      margin-left: 0;
+      margin-right: 15px;
+      transform: rotateY(180deg); }
+  .dropdown-inner-menu-title h6 {
+    text-align: right; }
+  .dropdown-inner-menu .dropdown-inner-menu-item {
+    margin-left: 0;
+    margin-right: -20px; }
+  .dropdown-inner-menu-item a span > i {
+    transform: rotateY(180deg); }
+  .image-and-title-container {
+    padding-left: 0;
+    padding-right: 18px;
+    text-align: right; } }
