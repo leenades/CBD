@@ -41,6 +41,9 @@
     right: -29px;
     left: 0; }
 
+.modal-body-col-1 .signup-content .sign-up-input .iti {
+  direction: ltr; }
+
 @media screen and (min-width: 768px) {
   .main-header .main-header-contents .header-title {
     margin-bottom: 48px; }

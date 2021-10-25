@@ -448,7 +448,6 @@ section.image-container-section {
   #mainNavBar {
     display: none !important; }
   .navbar-secondary .menu-list-left .secondary-nav-inner-dropdowns {
-    max-width: 960px;
     left: 0;
     right: 0;
     margin-left: auto;
