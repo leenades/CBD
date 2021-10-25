@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -18,7 +18,22 @@
       rel="stylesheet"
       href="../Plugins/intlTelInput/build/css/intlTelInput.css"
     />
-    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <link rel="stylesheet" href="../styles/css/global-styles.css" />
+    <link rel="stylesheet" href="../styles/css/navbar.css" />
+    <link rel="stylesheet" href="../styles/css/main-header.css" />
+    <link rel="stylesheet" href="../styles/css/login-signup-widget.css" />
+    <link rel="stylesheet" href="../styles/css/slick-slider.css" />
+    <link rel="stylesheet" href="../styles/css/cbd-for-business-widget.css" />
+    <link rel="stylesheet" href="../styles/css/cbd-investr-widget.css" />
+    <link rel="stylesheet" href="../styles/css/icons-banner.css" />
+    <link rel="stylesheet" href="../styles/css/blurb-widget.css" />
+    <link rel="stylesheet" href="../styles/css/carousel-text-widget.css" />
+    <link rel="stylesheet" href="../styles/css/credit-card-widget.css" />
+    <link rel="stylesheet" href="../styles/css/counter-widget.css" />
+    <link rel="stylesheet" href="../styles/css/accordion.css" />
+    <link rel="stylesheet" href="../styles/css/newsletter-widget.css" />
+    <link rel="stylesheet" href="../styles/css/footer.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -64,7 +79,7 @@
           MENU
         </button>
         <div class="collapse navbar-collapse d-none d-sm-block">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
+          <ul class="navbar-nav w-50 menu-list-left">
             <li class="nav-item">
               <a
                 href="#"
@@ -191,10 +206,10 @@
               </ul>
             </li>
           </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0 menu-list-right">
+          <ul class="navbar-nav w-50 menu-list-right justify-content-end">
             <li class="nav-item">
               <a
-                href="#"
+                href="./ar/Home.html"
                 target="_self"
                 rel="noopener"
                 title="Translate"
@@ -570,7 +585,7 @@
           <div class="menu-list-left">
             <a
               href="#"
-              class="navbar-brand"
+              class="navbar-brand cbd-light-logo"
               target="_self"
               rel="noopener"
               title="Commercial Bank of Dubai"
@@ -582,9 +597,23 @@
                 height="50"
                 class="lazyload"
             /></a>
+            <a
+            href="#"
+            class="navbar-brand cbd-dark-logo d-none"
+            target="_self"
+            rel="noopener"
+            title="Commercial Bank of Dubai"
+            aria-label="Commercial Bank of Dubai"
+            ><img
+              data-src="../Assets/Images/Image/cbd-dark-logo.svg"
+              alt="CBD logo"
+              width="229"
+              height="50"
+              class="lazyload"
+          /></a>
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
-                <li class="nav-item">
+                <li class="nav-item" id="item-5677">
                   <a
                     href="#"
                     class="nav-link dropdown-toggle"
@@ -957,7 +986,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <div class="arrow"></div>
+                <!-- <div class="arrow" style="transform: translate(266px,-45px) rotate(45deg);"></div> -->
+
+                <li class="nav-item" id="item-5678">
                   <a
                     href="#"
                     class="nav-link dropdown-toggle"
@@ -971,7 +1003,7 @@
                     >Digital Banking</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="digitalBankingDropDownMenu"
                   >
                     <div class="row">
@@ -1200,7 +1232,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <!-- <div class="arrow" style="transform: translate(418px,-45px) rotate(45deg);"></div> -->
+
+                <li class="nav-item" id="item-5679">
                   <a
                     href="#"
                     title="More"
@@ -1212,7 +1246,7 @@
                     >More</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="moreOptionsDropDownMenu"
                   >
                     <div class="row">
@@ -1408,6 +1442,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- <div class="arrow" style="transform: translate(552px,-45px) rotate(45deg);"></div> -->
               </ul>
             </div>
           </div>
@@ -1878,7 +1913,7 @@
                     >Digital Banking</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="digitalBankingDropDownMenu"
                   >
                     <div class="row">
@@ -2116,7 +2151,7 @@
                     >More</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="moreOptionsDropDownMenu"
                   >
                     <div class="row">
@@ -2364,7 +2399,7 @@
     </section> -->
 
     <!-- main header with side image -->
-    <!-- <section class="main-header bg-neutral" id="mainHeader">
+    <!-- <section class="main-header bg-neutral addLightBG" id="mainHeader">
       <nav
         class="
           navbar navbar-expand-lg navbar-secondary
@@ -2377,12 +2412,12 @@
             <a
               href="#"
               class="navbar-brand"
-              target=""
-              rel=""
-              title=""
+              target="_self"
+              rel="noopener"
+              title="Commercial Bank of Dubai"
               aria-label="Commercial Bank of Dubai"
               ><img
-                data-src="../Assets/Images/Image/cbd-light-logo.svg"
+                data-src="../../Assets/Images/Image/cbd-dark-logo.svg"
                 alt="CBD logo"
                 width="229"
                 height="50"
@@ -2390,18 +2425,18 @@
             /></a>
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list-left">
-                <li class="nav-item">
+                <li class="nav-item" id="item-5677">
                   <a
                     href="#"
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle dark-font"
                     id="personalDropDownMenu"
-                    aria-label="Personal page"
-                    title="Personal"
-                    rel="noopener"
+                    aria-label="Products page"
                     target="_self"
+                    rel="noopener"
+                    title="Products"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    >Personal</a
+                    >Products</a
                   >
                   <div
                     class="dropdown-menu secondary-nav-inner-dropdowns"
@@ -2411,7 +2446,12 @@
                       <div class="col">
                         <div class="dropdown-menu-title">
                           <h4>Products</h4>
-                          <a href="#" rel="" target="" aria-label="" title=""
+                          <a
+                            href="#"
+                            rel="noopener"
+                            target="_blank"
+                            title="Islamic Banking"
+                            aria-label="Go to Islamic Banking"
                             >Go to Islamic Banking
                             <span><i class="fa fa-arrow-right"></i></span
                           ></a>
@@ -2426,48 +2466,48 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Current Accounts"
+                              aria-label="Current Accounts"
+                              class="item"
                               >Current Accounts<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Savings Accounts"
+                              aria-label="Savings Accounts"
+                              class="item"
                               >Savings Accounts<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Foreign Currency Accounts"
+                              aria-label="Foreign Currency Accounts"
+                              class="item"
                               >Foreign Currency Accounts<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Gold Accounts"
+                              aria-label="Gold Accounts"
+                              class="item"
                               >Gold Accounts<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2479,36 +2519,36 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Life Insurance"
+                              aria-label="Life Insurance"
+                              class="item"
                               >Life Insurance<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Health Insurance"
+                              aria-label="Health Insurance"
+                              class="item"
                               >Health Insurance<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Tranvel Insurance"
+                              aria-label="Travel Insurance"
+                              class="item"
                               >Travel Insurance<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2522,36 +2562,36 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Credit Cards"
+                              aria-label="Credit Cards"
+                              class="item"
                               >Credit Cards<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="E-dirham Cards"
+                              aria-label="E-dirhams Cards"
+                              class="item"
                               >E-dirham Cards<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="prepaid cards"
+                              aria-label="prepaid cards"
+                              class="item"
                               >Prepaid Cards<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2563,48 +2603,48 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="cbd investr"
+                              aria-label="cbd investr"
+                              class="item"
                               >CBD Investr<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Investment Products"
+                              aria-label="Investment Products"
+                              class="item"
                               >Investment Products<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="cbd FxTrader"
+                              aria-label="cbd FxTrader"
+                              class="item"
                               >CBD FxTradr<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="cbd financial services"
+                              aria-label="cbd financial services"
+                              class="item"
                               >CBD Financial Services<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2618,36 +2658,36 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Auto Loans"
+                              aria-label="Auto Loans"
+                              class="item"
                               >Auto Loans<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Mortgage Loans"
+                              aria-label="Mortgage Loans"
+                              class="item"
                               >Mortgage Loans<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Personal Loans"
+                              aria-label="Personal Loans"
+                              class="item"
                               >Personal Loans<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2659,36 +2699,36 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Time deposit"
+                              aria-label="time deposit"
+                              class="item"
                               >Time Deposit<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="step up time deposit"
+                              aria-label="sep up time deposit"
+                              class="item"
                               >Step up Time Deposit<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="bonus booster deposit"
+                              aria-label="bonus booster deposit"
+                              class="item"
                               >Bonus Booster Deposit<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2702,15 +2742,15 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="elite banking"
+                              aria-label="elite banking"
+                              class="item"
                               ><div class="d-flex">
                                 <img
-                                  data-src="../Assets/Images/Image/elite-banking.webp"
+                                  data-src="../../Assets/Images/Image/elite-banking.webp"
                                   alt="Elite Banking"
                                   width="145"
                                   height="120"
@@ -2728,15 +2768,15 @@
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="private banking"
+                              aria-label="private banking"
+                              class="item"
                               ><div class="d-flex">
                                 <img
-                                  data-src="../Assets/Images/Image/private-banking.webp"
+                                  data-src="../../Assets/Images/Image/private-banking.webp"
                                   alt="private banking"
                                   width="145"
                                   height="120"
@@ -2758,28 +2798,34 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <div class="arrow"></div>
+                <li class="nav-item" id="item-5678">
                   <a
                     href="#"
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle dark-font"
                     id="digitalBankingDropDownMenu"
                     aria-label="Digital Banking page"
-                    title=""
                     target="_self"
                     rel="noopener"
+                    title="Digital banking"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >Digital Banking</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="digitalBankingDropDownMenu"
                   >
                     <div class="row">
                       <div class="col">
                         <div class="dropdown-menu-title">
                           <h4>Digital Banking</h4>
-                          <a href="#" rel="" target="" aria-label="" title=""
+                          <a
+                            href="#"
+                            rel="noopener"
+                            target="_self"
+                            aria-label="Go to Islamic banking"
+                            title="Islamic banking"
                             >Go to Islamic Banking
                             <span><i class="fa fa-arrow-right"></i></span
                           ></a>
@@ -2794,84 +2840,84 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="Local Transfer"
+                              aria-label="Local transfer"
+                              class="item"
                               >Local Transfers<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title="International Transfers"
+                              aria-label="International Transfers"
+                              class="item"
                               >International Transfers<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Instant Transfers<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Investor Relations<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Apple Pay<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Google Pay<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Samsung Pay<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2885,36 +2931,36 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >CBD Mobile App<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Online Banking<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Digital Banking<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2928,48 +2974,48 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >CBD Rewards<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >All Offers and Discounts<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Free Amazon Prime<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Share and Earn AED 500<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -2979,7 +3025,7 @@
                       <div class="col">
                         <div class="inner-nav-item-image-container">
                           <img
-                            data-src="../Assets/Images/Image/getapp.webp"
+                            data-src="../../Assets/Images/Image/getapp.webp"
                             alt="image of cbd app"
                             width="309"
                             height="398"
@@ -2996,28 +3042,31 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="item-5679">
                   <a
                     href="#"
-                    class="nav-link dropdown-toggle"
+                    title="More"
+                    class="nav-link dropdown-toggle dark-font"
                     id="moreOptionsDropDownMenu"
                     aria-label="More options page"
-                    rel=""
-                    target="_self"
-                    title=""
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >More</a
                   >
                   <div
-                    class="dropdown-menu secondary-nav-inner-dropdowns bg-light"
+                    class="dropdown-menu secondary-nav-inner-dropdowns"
                     aria-labelledby="moreOptionsDropDownMenu"
                   >
                     <div class="row">
                       <div class="col">
                         <div class="dropdown-menu-title">
                           <h4>More</h4>
-                          <a href="#" rel="" target="" aria-label=""
+                          <a
+                            href="#"
+                            rel="noopener"
+                            target="_self"
+                            aria-label="Islamic Banking"
+                            title="Islamic Banking"
                             >Go to Islamic Banking
                             <span><i class="fa fa-arrow-right"></i></span
                           ></a>
@@ -3029,48 +3078,48 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >SMS Banking<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Phone Banking<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Cash Online<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Service Promise<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -3081,47 +3130,47 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Online Help<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Chat<span><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Get In Touch<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Locations<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -3132,48 +3181,48 @@
                         <ul class="dropdown-inner-menu">
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Fees and Charges<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Privacy Policy<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Terms and Conditions<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
                           </li>
                           <li class="dropdown-inner-menu-item">
                             <a
-                            href="#"
-                            target="_self"
-                            rel="noopener"
-                            title=""
-                            aria-label=""
-                            class="item"
+                              href="#"
+                              target="_self"
+                              rel="noopener"
+                              title=""
+                              aria-label=""
+                              class="item"
                               >Useful Links<span
                                 ><i class="fa fa-arrow-right"></i></span
                             ></a>
@@ -3183,7 +3232,7 @@
                       <div class="col">
                         <div class="inner-nav-item-image-container">
                           <img
-                            data-src="../Assets/Images/Image/getsupport.webp"
+                            data-src="../../Assets/Images/Image/getsupport.webp"
                             alt="need assistance from cbd customer service?"
                             width="309"
                             height="200"
@@ -3210,9 +3259,9 @@
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#loginModal"
-                class="btn btn-white"
+                class="btn btndark-transparent-bg"
               >
-                Login
+              Login
               </button>
             </div>
             <div class="">
@@ -3222,7 +3271,7 @@
                 data-bs-target="#signUpModal"
                 class="btn btn-blue"
               >
-                Sign up
+              Sign up
               </button>
             </div>
           </div>
@@ -3367,7 +3416,7 @@
       </div>
     </div>
     <!-- products section -->
-    <section class="products-section">
+    <section class="products-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="products-header-title">
@@ -3442,16 +3491,18 @@
     </section>
 
     <!-- icons section -->
-    <section class="icons-section">
+    <section class="icons-section addLightBG">
       <div class="container">
         <div class="row">
-          <div class="col products-header-title">
-            <h2>Write a catchy and compelling header here</h2>
-            <p class="subtitle-styles">Here’s your subtitle</p>
-            <p>
-              You can write a nice long paragraph here that goes on and on for
-              one or two lines.
-            </p>
+          <div class="col">
+            <div class="products-header-title">
+              <h2>Write a catchy and compelling header here</h2>
+              <p class="subtitle-styles">Here’s your subtitle</p>
+              <p>
+                You can write a nice long paragraph here that goes on and on for
+                one or two lines.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -3546,16 +3597,18 @@
     </section>
 
     <!-- brand features section -->
-    <section class="brand-features">
+    <section class="brand-features addLightBG">
       <div class="container">
         <div class="row">
-          <div class="col products-header-title">
-            <h2>Write a catchy and compelling header here</h2>
-            <p class="subtitle-styles">Here’s your subtitle</p>
-            <p>
-              You can write a nice long paragraph here that goes on and on for
-              one or two lines.
-            </p>
+          <div class="col">
+            <div class="products-header-title">
+              <h2>Write a catchy and compelling header here</h2>
+              <p class="subtitle-styles">Here’s your subtitle</p>
+              <p>
+                You can write a nice long paragraph here that goes on and on for
+                one or two lines.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -3566,7 +3619,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3596,7 +3654,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3626,7 +3689,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3656,7 +3724,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3686,7 +3759,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3716,7 +3794,12 @@
               <div class="body">
                 <p>
                   You can write a nice long paragraph here and
-                  <a href="#" title="" rel="noopener" aria-label="..."
+                  <a
+                    href="#"
+                    title=""
+                    class="link-blue"
+                    rel="noopener"
+                    aria-label="..."
                     >even put a link.</a
                   >
                 </p>
@@ -3752,16 +3835,18 @@
     </section>
 
     <!-- slider three distinct styles section -->
-    <section class="slider-unique">
+    <section class="slider-unique addLightBG">
       <div class="container">
         <div class="row">
-          <div class="col products-header-title">
-            <h2>Write a catchy and compelling header here</h2>
-            <p class="subtitle-styles">Here’s your subtitle</p>
-            <p>
-              You can write a nice long paragraph here that goes on and on for
-              one or two lines.
-            </p>
+          <div class="col">
+            <div class="products-header-title">
+              <h2>Write a catchy and compelling header here</h2>
+              <p class="subtitle-styles">Here’s your subtitle</p>
+              <p>
+                You can write a nice long paragraph here that goes on and on for
+                one or two lines.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row align-items-baseline sliders-title-arrows">
@@ -4012,7 +4097,6 @@
               >
               <div>
                 <button class="btn btn-blue-darktext">CBD for business</button>
-                <button class="btn btn-dark-bg mx-1">Learn more</button>
               </div>
             </div>
           </div>
@@ -4038,7 +4122,32 @@
         </div>
       </div>
     </section>
-    <section class="get-started-section">
+    <section class="image-container-section addLightBG">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="products-header-title">
+              <h2>Write a catchy and compelling header here</h2>
+              <p class="subtitle-styles">Here’s your subtitle</p>
+              <p>
+                You can write a nice long paragraph here that goes on and on for
+                one or two lines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="image-fluid">
+          <picture>
+            <source data-srcset="../Assets/Images/Image/img-fluid.png" media="(min-width: 1200px)" />
+            <source data-srcset="../Assets/Images/Image/mob/img-fluid.png" media="(min-width: 320px)" />
+            <img data-src="../Assets/Images/Image/img-fluid.png" alt="" class="lazyload w-100" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="get-started-section addLightBG">
       <div class="container">
         <div class="row justify-content-between flex-column flex-md-row">
           <div class="col mb-md-0 mb-5">
@@ -4137,7 +4246,7 @@
         </div>
       </div>
     </section>
-    <section class="get-started-section">
+    <section class="get-started-section addLightBG">
       <div class="container">
         <div
           class="row justify-content-between flex-column-reverse flex-md-row"
@@ -4238,7 +4347,7 @@
         </div>
       </div>
     </section>
-    <section class="benefits-and-rewards-section">
+    <section class="benefits-and-rewards-section addLightBG">
       <div class="container">
         <div
           class="row align-items-baseline sliders-title-arrows anchor-arrow-row"
@@ -4312,7 +4421,7 @@
         </div>
       </div>
     </section>
-    <section class="latest-offers-section">
+    <section class="latest-offers-section addLightBG">
       <div class="container">
         <div
           class="row align-items-baseline sliders-title-arrows anchor-arrow-row"
@@ -4453,7 +4562,7 @@
       </div>
     </section>
     <!-- image left text right section -->
-    <section class="banner-center">
+    <section class="banner-center addLightBG">
       <div class="container">
         <div class="row justify-content-between flex-column flex-md-row">
           <div class="col-md-5 col mb-md-0 mb-5">
@@ -4588,7 +4697,7 @@
       </div>
     </section>
     <!-- text left image right section -->
-    <section class="banner-center">
+    <section class="banner-center addLightBG">
       <div class="container">
         <div
           class="row justify-content-between flex-column-reverse flex-md-row"
@@ -4725,7 +4834,7 @@
       </div>
     </section>
     <!-- text small image left image button right section  -->
-    <section class="banner-center extended-banner-center">
+    <section class="banner-center extended-banner-center addLightBG">
       <div class="container">
         <div class="row">
           <div class="col products-header-title">
@@ -4948,7 +5057,7 @@
     </section>
 
     <!-- online pay section with no buttons -->
-    <section class="online-pay-section">
+    <section class="online-pay-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -5042,7 +5151,7 @@
 
     <!-- online pay section with buttons -->
 
-    <section class="online-pay-section">
+    <section class="online-pay-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -5136,7 +5245,7 @@
       </div>
     </section>
 
-    <section class="awards-section">
+    <section class="awards-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col products-header-title">
@@ -5262,7 +5371,7 @@
         </div>
       </div>
     </section>
-    <section class="branches-and-atms-section">
+    <section class="branches-and-atms-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -5277,7 +5386,7 @@
               <div class="row">
                 <div class="col">
                   <p class="online-pay-paragraph">
-                    Whether you’re lookng for s specific branch or ATM function,
+                    Whether you’re lookng for a specific branch or ATM function,
                     you’ll find us nearby
                   </p>
                 </div>
@@ -5301,7 +5410,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials-sections">
+    <section class="testimonials-sections addLightBG">
       <div class="container">
         <div class="row">
           <div class="col products-header-title">
@@ -5345,7 +5454,7 @@
       </div>
     </section>
     <!-- counter section -->
-    <section class="counter-section">
+    <section class="counter-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col products-header-title">
@@ -5506,7 +5615,7 @@
         </div>
       </div>
     </section>
-    <section class="faq-accordion-section">
+    <section class="faq-accordion-section addLightBG">
       <div class="container">
         <div class="row">
           <div class="col products-header-title">
@@ -5534,19 +5643,9 @@
                       width="44"
                       height="44"
                     />
-                    When are new features going to be available?
+                    Write a frequently asked question or information heading
+                    here.
                   </button>
-                  <div class="accordion-sidebutton">
-                    <a
-                      href="#"
-                      class="btn btn-blue"
-                      target="_self"
-                      rel="noopener"
-                      title=""
-                      aria-label="..."
-                      >Button</a
-                    >
-                  </div>
                 </h2>
                 <div
                   id="collapseOne"
@@ -5555,11 +5654,32 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis, deleniti sint sed minus nihil, quo maxime ullam
-                    a, consequatur laudantium similique excepturi! Alias,
-                    voluptatum. Accusantium, fugiat neque? Placeat, porro
-                    perspiciatis?
+                    Add your body here.
+                    <div class="accordion-innerbody">
+                      <h6>Here’s your subtitle</h6>
+                      <p>
+                        You can write a sentence or a nice long paragraph here.
+                      </p>
+                      <ul class="accordion-list">
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="accordion-sidebutton">
+                      <a
+                        href="#"
+                        target="_self"
+                        rel="noopener"
+                        title=""
+                        aria-label="..."
+                        class="btn btn-blue"
+                        >Button</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -5580,19 +5700,9 @@
                       width="44"
                       height="44"
                     />
-                    No fees, really? How do you make money?
+                    Write a frequently asked question or information heading
+                    here.
                   </button>
-                  <div class="accordion-sidebutton">
-                    <a
-                      href="#"
-                      target="_self"
-                      rel="noopener"
-                      title=""
-                      aria-label="..."
-                      class="btn btn-blue"
-                      >Button</a
-                    >
-                  </div>
                 </h2>
                 <div
                   id="collapseTwo"
@@ -5601,11 +5711,32 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis, deleniti sint sed minus nihil, quo maxime ullam
-                    a, consequatur laudantium similique excepturi! Alias,
-                    voluptatum. Accusantium, fugiat neque? Placeat, porro
-                    perspiciatis?
+                    Add your body here.
+                    <div class="accordion-innerbody">
+                      <h6>Here’s your subtitle</h6>
+                      <p>
+                        You can write a sentence or a nice long paragraph here.
+                      </p>
+                      <ul class="accordion-list">
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="accordion-sidebutton">
+                      <a
+                        href="#"
+                        target="_self"
+                        rel="noopener"
+                        title=""
+                        aria-label="..."
+                        class="btn btn-blue"
+                        >Button</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -5626,15 +5757,9 @@
                       width="44"
                       height="44"
                     />
-                    When are new features going to be available?
+                    Write a frequently asked question or information heading
+                    here.
                   </button>
-                  <div class="accordion-sidebutton">
-                    <a href="#"
-                    target="_self"
-                    rel="noopener"
-                    title=""
-                    aria-label="..." class="btn btn-blue">Button</a>
-                  </div>
                 </h2>
                 <div
                   id="collapseThree"
@@ -5649,12 +5774,25 @@
                       <p>
                         You can write a sentence or a nice long paragraph here.
                       </p>
+                      <ul class="accordion-list">
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                      </ul>
                     </div>
-                    <div class="accordion-innerbody">
-                      <h6>Here’s your subtitle</h6>
-                      <p>
-                        You can write a sentence or a nice long paragraph here.
-                      </p>
+                    <div class="accordion-sidebutton">
+                      <a
+                        href="#"
+                        target="_self"
+                        rel="noopener"
+                        title=""
+                        aria-label="..."
+                        class="btn btn-blue"
+                        >Button</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -5676,15 +5814,9 @@
                       width="44"
                       height="44"
                     />
-                    No fees, really? How do you make money?
+                    Write a frequently asked question or information heading
+                    here.
                   </button>
-                  <div class="accordion-sidebutton">
-                    <a href="#"
-                    target="_self"
-                    rel="noopener"
-                    title=""
-                    aria-label="..." class="btn btn-blue">Button</a>
-                  </div>
                 </h2>
                 <div
                   id="collapseFour"
@@ -5693,11 +5825,32 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis, deleniti sint sed minus nihil, quo maxime ullam
-                    a, consequatur laudantium similique excepturi! Alias,
-                    voluptatum. Accusantium, fugiat neque? Placeat, porro
-                    perspiciatis?
+                    Add your body here.
+                    <div class="accordion-innerbody">
+                      <h6>Here’s your subtitle</h6>
+                      <p>
+                        You can write a sentence or a nice long paragraph here.
+                      </p>
+                      <ul class="accordion-list">
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                        <li class="accordion-list-item">
+                          Write a point over here.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="accordion-sidebutton">
+                      <a
+                        href="#"
+                        target="_self"
+                        rel="noopener"
+                        title=""
+                        aria-label="..."
+                        class="btn btn-blue"
+                        >Button</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -5710,9 +5863,38 @@
               <button class="btn btn-blue-darktext">CTA one</button>
               <button class="btn btndark-transparent-bg mx-1">CTA two</button>
             </div>
-            <a class="d-none" href="#" aria-label="" target="" rel="" title=""
-              >Find out more <span><i class="fa fa-arrow-right"></i></span
-            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="container">
+        <div class="row newsletter-row">
+          <div class="col-md-5 col">
+            <div class="lorem-container-left">
+              <h3>Write a catchy and compelling header here</h3>
+              <h4>Here’s your subtitle</h4>
+              <p>
+                You can write a nice long paragraph here that goes on and on for
+                one or two lines.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 col col-email-btn">
+            <div class="email-container">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                class="newsletter-email"
+                id="email"
+                placeholder="Enter email address"
+              />
+            </div>
+            <div class="newsletter-btn">
+              <button class="btn btn-blue-darktext">CTA one</button>
+              <button class="btn btndark-transparent-bg mx-1">CTA two</button>
+            </div>
           </div>
         </div>
       </div>
@@ -5804,7 +5986,9 @@
                 <a href="#" aria-label="About us" title="">About Us</a>
               </li>
               <li><a href="#" aria-label="Library" title="">Personal</a></li>
-              <li><a href="#" aria-label="Alumni" title="">Islamic Banking</a></li>
+              <li>
+                <a href="#" aria-label="Alumni" title="">Islamic Banking</a>
+              </li>
               <li>
                 <a href="#" aria-label="Community Information" title=""
                   >Business Banking</a
@@ -5837,14 +6021,42 @@
             </div>
             <ul class="footer-list collapse" id="usefulID">
               <li>
-                <a href="#" aria-label="About us" target="_self" title="" rel="noopener">UAE Banks Federation</a>
+                <a
+                  href="#"
+                  aria-label="About us"
+                  target="_self"
+                  title=""
+                  rel="noopener"
+                  >UAE Banks Federation</a
+                >
               </li>
-              <li><a href="#" aria-label="Library" target="_self" title="" rel="noopener">Central Bank of UAE</a></li>
               <li>
-                <a href="#" aria-label="Alumni" target="_self" title="" rel="noopener">Al Etihad Credit Bureau</a>
+                <a
+                  href="#"
+                  aria-label="Library"
+                  target="_self"
+                  title=""
+                  rel="noopener"
+                  >Central Bank of UAE</a
+                >
               </li>
               <li>
-                <a href="#" aria-label="Community Information" target="_self" title="" rel="noopener"
+                <a
+                  href="#"
+                  aria-label="Alumni"
+                  target="_self"
+                  title=""
+                  rel="noopener"
+                  >Al Etihad Credit Bureau</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Community Information"
+                  target="_self"
+                  title=""
+                  rel="noopener"
                   >CBUAE Customer Charter</a
                 >
               </li>
@@ -5870,17 +6082,54 @@
             </div>
             <ul class="footer-list collapse" id="transparencyID">
               <li>
-                <a href="#" aria-label="About us" title="" rel="noopener" target="_self">Fees & charges</a>
+                <a
+                  href="#"
+                  aria-label="About us"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Fees & charges</a
+                >
               </li>
-              <li><a href="#" aria-label="Library" title="" rel="noopener" target="_self">Terms & conditions</a></li>
               <li>
-                <a href="#" aria-label="Alumni" title="" rel="noopener" target="_self">Privacy Prolicy</a>
+                <a
+                  href="#"
+                  aria-label="Library"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Terms & conditions</a
+                >
               </li>
               <li>
-                <a href="#" aria-label="Community Information" title="" rel="noopener" target="_self">Key Facts</a>
+                <a
+                  href="#"
+                  aria-label="Alumni"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Privacy Prolicy</a
+                >
               </li>
               <li>
-                <a href="#" aria-label="Community Information" title="" rel="noopener" target="_self">FX Rates</a>
+                <a
+                  href="#"
+                  aria-label="Community Information"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Key Facts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Community Information"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >FX Rates</a
+                >
               </li>
             </ul>
           </div>
@@ -5904,11 +6153,34 @@
             </div>
             <ul class="footer-list collapse" id="supportID">
               <li>
-                <a href="#" aria-label="About us" title="" rel="noopener" target="_self">Get in touch</a>
+                <a
+                  href="#"
+                  aria-label="About us"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Get in touch</a
+                >
               </li>
-              <li><a href="#" aria-label="Library" title="" rel="noopener" target="_self">Locations</a></li>
               <li>
-                <a href="#" aria-label="Alumni" title="" rel="noopener" target="_self">Help</a>
+                <a
+                  href="#"
+                  aria-label="Library"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Alumni"
+                  title=""
+                  rel="noopener"
+                  target="_self"
+                  >Help</a
+                >
               </li>
             </ul>
           </div>
@@ -5941,6 +6213,125 @@
         </div>
       </div>
     </footer>
+    <div class="cookie-banner d-none">
+      <div class="container-cookies">
+        <div class="row cookie-row">
+          <div class="col-md-7 col">
+            <div class="cookie-image-text">
+              <img
+                data-src="../Assets/Images/Icons/cookies.png"
+                class="lazyload"
+                width="24"
+                height="29"
+                alt="website cookies"
+              />
+              <p>
+                Commercial Bank of Dubai uses cookies to make your experience
+                better. By using this website, you agree to the
+                <a
+                  href="#"
+                  class="link-blue"
+                  rel="noopener"
+                  title="cookie policy"
+                  aria-label="cookie policy"
+                  >Cookie Policy.</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col cookie-btn-col">
+            <div class="cookie-buttons">
+              <button
+                class="btn btn-white cookie-btn"
+                id="manageCookies"
+                aria-label="Manage cookies"
+              >
+                Manage Cookies
+              </button>
+              <button
+                class="btn btn-blue cookie-btn"
+                id="acceptAllCookies"
+                aria-label="Accept all"
+              >
+                Accept all
+              </button>
+            </div>
+          </div>
+          <div class="col-md-1 col">
+            <div class="close">
+              <span class="slash-1"></span>
+              <span class="slash-2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manage-cookies">
+      <div class="container-cookies">
+        <div class="row cookie-row justify-content-center">
+          <div class="col">
+            <div class="cookies-preferences">
+              <div class="title-btn">
+                <h6>Customize your preferences</h6>
+                <div class="close-pref">
+                  <span class="slash-1"></span>
+                  <span class="slash-2"></span>
+                </div>
+              </div>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="necessities"
+                  name="necessaryCookies"
+                  class="checkbox"
+                  checked
+                  disabled
+                />
+                <label for="necessities"
+                  ><strong> Strictly necessary cookies</strong>
+                  <br class="d-md-none" />Essential cookies that allow you to
+                  move around the website and use its features.</label
+                >
+              </div>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="functional"
+                  name="functionalCookies"
+                  class="checkbox"
+                  checked
+                />
+                <label for="functional"
+                  ><strong> Functional cookies</strong
+                  ><br class="d-md-none" />Optional cookies that allow the
+                  website to remember choices you make to give you better
+                  functionality and personal features.</label
+                >
+              </div>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="performance"
+                  name="performanceCookies"
+                  class="checkbox"
+                  checked
+                />
+                <label for="performance"
+                  ><strong> Performance cookies</strong
+                  ><br class="d-md-none" />Anonymous cookies to help improve the
+                  performance of the website.</label
+                >
+              </div>
+              <div class="cookie-buttons">
+                <button class="btn small-paddings" id="confirmPreferences">
+                  Confirm and continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

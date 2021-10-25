@@ -1,0 +1,135 @@
+.faq-accordion-section {
+  .row {
+    .products-header-title {
+      > p {
+        margin-top: 24px;
+        text-align: center;
+      }
+    }
+  }
+  .find-out-more-link-row {
+    a {
+      text-decoration: none;
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #020205;
+      display: block;
+      width: 100%;
+      span {
+        > i {
+          margin-left: 21px;
+        }
+      }
+    }
+  }
+  .accordion {
+    margin-bottom: 56px;
+    .accordion-item {
+      margin-bottom: 16px;
+      border-radius: 16px;
+      .accordion-header {
+        > .accordion-button {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 26px;
+          letter-spacing: 0.4px;
+          color: #020205;
+          padding: 32px 37px 32px 32px;
+          background-color: #fff;
+          border-radius: 16px;
+          box-shadow: none;
+          &::after {
+            content: "\f067";
+            background-image: none;
+            transition: none;
+            font-weight: 900;
+            font-size: 22px;
+            font-family: "Font Awesome 5 Free";
+          }
+          &:not(.collapsed) {
+            &::after {
+              content: "\f068";
+              font-weight: 900;
+              font-family: "Font Awesome 5 Free";
+            }
+          }
+        }
+        > .accordion-button.collapsed {
+          &::after {
+            content: "\f067";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+          }
+        }
+      }
+    }
+  }
+}
+.accordion-list {
+  list-style: auto;
+  .accordion-list-item {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #020205;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -29px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #f2f2f7;
+      z-index: -1;
+    }
+  }
+}
+.accordion-header {
+  position: relative;
+}
+.accordion-innerbody {
+  h6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #020205;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+}
+.accordion-body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .faq-accordion-section {
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          > .accordion-button {
+            font-size: 15px;
+            padding: 16px 23px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+}

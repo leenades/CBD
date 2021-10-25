@@ -1,0 +1,65 @@
+.lorem-container-left h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  color: #020205;
+  margin-bottom: 16px; }
+
+.lorem-container-left h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205;
+  margin-bottom: 8px; }
+
+.lorem-container-left p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205; }
+
+.newsletter-row {
+  justify-content: start;
+  align-items: center; }
+
+.newsletter-email {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(28, 28, 28, 0.24); }
+
+.email-container label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #020205; }
+
+.col-email-btn {
+  display: flex;
+  align-items: end; }
+
+.email-container {
+  width: 50%; }
+
+.newsletter-btn {
+  width: 50%;
+  text-align: right; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .newsletter-btn {
+    text-align: left; }
+  .col-email-btn {
+    flex-direction: column;
+    align-items: flex-start; }
+  .email-container {
+    margin-bottom: 24px;
+    width: 100%; }
+  .newsletter-btn {
+    width: 100%; }
+  .newsletter-row {
+    flex-direction: column; } }

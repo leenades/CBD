@@ -1,0 +1,126 @@
+.modal-content {
+  height: 90vh;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    opacity: 1;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: white;
+    z-index: 9;
+  }
+
+  .modal-body .modal-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .modal-body-row {
+    position: relative;
+    height: 100%;
+
+    .modal-body-col-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .signup-content .signup-content-text {
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 0.3px;
+          color: #020205;
+          text-align: center;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: rgba(2, 2, 5, 0.6);
+          text-align: center;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
+
+.btn-modal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: rgba(2, 2, 5, 0.2);
+  padding: 10px 24px;
+  background-color: #f2f2f7;
+  border-radius: 12px;
+  margin-top: 32px;
+}
+
+.modal-body-col-1 .signup-content .sign-up-input .iti {
+  display: block;
+}
+
+.sign-up-input > label {
+  margin-left: 88px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #020205;
+  margin-bottom: 15px;
+}
+
+.iti__flag-container {
+  padding: 0;
+}
+
+.modal-body-col-1 .signup-content .sign-up-input .iti > input {
+  outline: none;
+  padding-bottom: 8px;
+  margin-left: 88px;
+  padding-left: 0 !important;
+  border: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #02b8d1;
+  caret-color: #007e8f;
+  width: 77%;
+}
+
+.iti.iti--allow-dropdown .iti__flag-container .iti__selected-flag {
+  background-color: transparent;
+  border-bottom: 1px solid #02b8d1;
+  padding-bottom: 8px;
+}
+
+.valid-msg {
+  color: #0f0;
+}
+
+.error-msg {
+  color: #f00;
+}
+.iti__flag {
+  background-image: url("../../Plugins/intlTelInput/build/img/flags.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../../Plugins/intlTelInput/build/img/flags@2x.png");
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}

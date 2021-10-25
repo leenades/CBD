@@ -1,0 +1,120 @@
+.get-started-section {
+  .texts-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 48px;
+      color: #020205;
+    }
+    span {
+      > p {
+        font-size: 18px;
+        color: #020205;
+        line-height: 28px;
+        font-weight: normal;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+.cbd-investr-section {
+  .texts-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 48px;
+      color: #020205;
+    }
+  }
+}
+.cbd-investr-section {
+  .texts-container {
+    span {
+      > p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: #020205;
+      }
+    }
+  }
+}
+.cbd-investr-section {
+  position: relative;
+  > picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .texts-container {
+    > img {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .get-started-section {
+    .texts-container {
+      > h3 {
+        text-align: center;
+      }
+      span {
+        > p {
+          text-align: center;
+          padding-right: 0;
+        }
+      }
+      align-items: center;
+    }
+  }
+  .cbd-investr-section {
+    .texts-container {
+      > h3 {
+        text-align: center;
+      }
+      span {
+        > p {
+          text-align: center;
+          padding-right: 0;
+        }
+      }
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .get-started-section {
+    .texts-container {
+      > h3 {
+        text-align: left;
+      }
+      
+      align-items: flex-start;
+    }
+  }
+  .cbd-investr-section {
+    .texts-container {
+  
+      align-items: flex-start;
+    }
+  }
+}

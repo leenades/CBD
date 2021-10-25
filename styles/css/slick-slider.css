@@ -1,0 +1,273 @@
+.btn-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 32px;
+  left: 0; }
+
+.slick-list.draggable {
+  overflow: visible; }
+
+.sliders-title-arrows div .slider-title > h3 {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #020205; }
+
+.arrows-styles {
+  display: flex;
+  justify-content: end;
+  text-align: end; }
+  .arrows-styles .slick-prev {
+    position: unset;
+    transform: none;
+    order: 2;
+    margin-right: 39px; }
+    .arrows-styles .slick-prev:before {
+      font-family: unset;
+      color: #000; }
+    .arrows-styles .slick-prev::before {
+      content: "\f060" !important;
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      font-size: 16px;
+      color: #020205;
+      opacity: 1; }
+  .arrows-styles .slick-next {
+    position: unset;
+    transform: none;
+    order: 3; }
+    .arrows-styles .slick-next:before {
+      font-family: unset;
+      color: #000; }
+    .arrows-styles .slick-next::before {
+      content: "\f061" !important;
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      font-size: 16px;
+      color: #020205;
+      opacity: 1; }
+
+.slick-arrow {
+  border: none;
+  background: transparent;
+  color: transparent;
+  display: inline-block; }
+
+.slider-column-spacing {
+  margin-top: 30px; }
+
+.js-benefits-slider-styles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .js-benefits-slider-styles .image {
+    position: relative; }
+    .js-benefits-slider-styles .image > h4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0 24px 24px;
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: 0.3px;
+      color: #fff;
+      font-weight: bold; }
+
+section.latest-offers-section {
+  padding-top: 0px; }
+
+.js-latest-offers-slider-styles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .js-latest-offers-slider-styles .image > h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #020205; }
+
+.js-products-slider-styles .slick-list .slick-track .slick-slide div {
+  margin-right: 32px; }
+
+.js-products-slider-styles .image > h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #020205; }
+
+.slick-list .slick-track .slick-slide div .image {
+  margin: 0;
+  position: relative; }
+  .slick-list .slick-track .slick-slide div .image > img {
+    border-radius: 32px;
+    border: none; }
+
+.slick-dotted .slick-dots {
+  margin-bottom: -25px; }
+  .slick-dotted .slick-dots li {
+    margin: 0; }
+    .slick-dotted .slick-dots li button[aria-selected="true"]::before {
+      color: #020205;
+      opacity: 1; }
+
+.slick-slider:not(.js-products-slider-styles) .slick-list .slick-track .slick-slide > div {
+  margin-right: 52px; }
+
+.js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
+  width: 243px;
+  height: 243px; }
+
+.js-testimonials-slider-styles .slick-list .slick-track .slick-slide div .image {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 32px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+  .js-testimonials-slider-styles .slick-list .slick-track .slick-slide div .image > h4 {
+    color: #020205;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin: 0 24px; }
+
+.js-awards-slider-styles .slick-list .slick-track .slick-slide div .image > h4 {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin: 0 24px; }
+
+.distinct-slider-container {
+  width: 343px !important;
+  height: 100%;
+  min-height: 517px;
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 24px 16px;
+  position: relative; }
+
+.view-all {
+  margin-right: 2rem; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .img-container-2 {
+    margin: -16px -11px; }
+  .distinct-slider-container {
+    width: 234px !important;
+    height: 100%;
+    min-height: 352px;
+    border-radius: 22px;
+    padding: 16px 11px;
+    position: relative; }
+  .sliders-title-arrows div .slider-title > h3 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.3px; }
+  .js-benefits-slider-styles {
+    justify-content: center; }
+    .js-benefits-slider-styles .image {
+      margin-bottom: 24px; }
+  .js-latest-offers-slider-styles {
+    justify-content: space-between; }
+    .js-latest-offers-slider-styles .image {
+      margin-bottom: 3rem;
+      width: 151px;
+      height: 154px; }
+      .js-latest-offers-slider-styles .image > img {
+        width: 100%;
+        height: 100%; }
+  .view-all-container {
+    text-align: center;
+    margin-top: 38px; }
+  .js-awards-slider-styles .slick-list .slick-track .slick-slide > div {
+    margin-right: 30px;
+    margin-left: 30px; }
+  .js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
+    margin-right: 30px;
+    margin-left: 30px; } }
+
+.text-container .text-c_heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgba(2, 2, 5, 0.6); }
+
+.text-container .text-c_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.3px;
+  color: #020205; }
+
+.text-container .text-c_body {
+  font-family: Euclid Square;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #020205; }
+
+.img-container-1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+
+.img-container-2 {
+  margin: -24px -16px; }
+
+.img-container-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0; }
+
+@media screen and (min-width: 768px) {
+  .view-all-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: end; }
+  .latest-offers-section .container {
+    position: relative; }
+  .benefits-and-rewards-section .container {
+    position: relative; }
+  .sliders-title-arrows div .slider-title > h3 {
+    font-size: 28px;
+    line-height: 36px; }
+  .slider-column-spacing {
+    padding: 0; }
+  .testimonials-sections .row .products-header-title > p {
+    margin-top: 24px; } }

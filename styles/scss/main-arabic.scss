@@ -1,0 +1,118 @@
+.arrows-styles {
+  flex-direction: row-reverse;
+}
+.blurb {
+  .image {
+    left: 0;
+    right: unset;
+    margin-left: 16px;
+  }
+}
+.slick-slider {
+  direction: ltr;
+  text-align: end;
+}
+.modal-content {
+  .modal-body {
+    .modal-image {
+      left: 0;
+      right: unset;
+    }
+  }
+}
+.banner-center {
+  .icons {
+    > span {
+      margin-left: 24px;
+    }
+  }
+}
+.js-latest-offers-slider-styles {
+  .image {
+    > h4 {
+      font-size: 16px;
+    }
+  }
+}
+.bigger-text {
+  line-height: 7rem;
+}
+.faq-accordion-section {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        > .accordion-button {
+          > img {
+            margin-left: 16px;
+          }
+          &:not(.collapsed) {
+            &::after {
+              margin-left: unset;
+              margin-right: auto;
+            }
+          }
+          &::after {
+            margin-left: unset;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}
+.accordion-list {
+    .accordion-list-item {
+        padding-right: 16px;
+        padding-left: 0;
+        &::before {
+            right: -29px;
+            left: 0;
+        }
+    }
+} 
+@media screen and (min-width: 768px) {
+  .main-header {
+    .main-header-contents {
+      .header-title {
+        h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 44px;
+          line-height: 64px;
+          color: #020205;
+          margin-bottom: 24px;
+        }
+        p {
+          margin-bottom: 4px;
+        }
+        margin-bottom: 48px;
+      }
+    }
+  }
+  .navbar-primary {
+    .menu-list-right {
+      .nav-item {
+        margin-left: 22px;
+        padding-left: 37px;
+        padding-right: 0;
+        &:last-child {
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+    }
+    .menu-list-left {
+      .nav-item {
+        margin-left: 22px;
+        padding-left: 37px;
+        margin-right: 0px;
+        padding-right: 0px;
+        .nav-link {
+          &::after {
+            margin-right: 11px;
+          }
+        }
+      }
+    }
+  }
+}

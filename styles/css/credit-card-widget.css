@@ -1,0 +1,14 @@
+.credit-card-for-you-section {
+  background: #181821; }
+  .credit-card-for-you-section .row {
+    text-align: center; }
+  .credit-card-for-you-section .text-row .col div > h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff; }
+
+.bigger-text {
+  font-size: 6rem; }

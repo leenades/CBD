@@ -1,0 +1,76 @@
+.cbd-for-business-section {
+  background: #181821;
+  .texts-container {
+    > h3 {
+      font-style: normal;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 24px;
+      font-size: 44px;
+      line-height: 48px;
+    }
+    span {
+      > p {
+        font-size: 18px;
+        color: #fff;
+        line-height: 28px;
+        font-weight: normal;
+        margin-bottom: 48px;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cbd-for-business-section {
+    .row {
+      .cbd-for-business-section {
+        .texts-container {
+          text-align: center;
+        }
+      }
+    }
+    .texts-container {
+      > h3 {
+        text-align: center;
+      }
+      span {
+        > p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .row-reverse-inner-elements {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cbd-for-business-section {
+    .texts-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      > .btn {
+        align-self: flex-start;
+      }
+    }
+  }
+  .cbd-investr-section {
+    .texts-container {
+      > .btn {
+        align-self: flex-start;
+      }
+    }
+  }
+  .get-started-section {
+    .texts-container {
+      > .btn {
+        align-self: flex-start;
+      }
+    }
+  }
+}
