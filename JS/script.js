@@ -82,60 +82,31 @@ $(document).ready(function () {
   $("#item-5677").on("mouseover", function () {
     $(this).addClass("hover");
     $("#item-5677 .secondary-nav-inner-dropdowns").addClass("show");
-    $(".arrow").css({
-      transform: "translate(50px, 32px) rotate(45deg)",
-      transition: "all .5s ease-in-out",
-      display: "block",
-    });
     if ($("#item-5678, #item-5679").hasClass("hover")) {
       $("#item-5678, #item-5679").removeClass("hover");
-      $(
-        "#item-5678 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns"
-      ).removeClass("show");
+      $("#item-5678 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns").removeClass("show");
     }
   });
   $("#item-5678").on("mouseover", function () {
     $(this).addClass("hover");
     $("#item-5678 .secondary-nav-inner-dropdowns").addClass("show");
-    $(".arrow").css({
-      transform: "translate(200px, 32px) rotate(45deg)",
-      transition: "all .5s ease-in-out",
-      display: "block",
-    });
     if ($("#item-5677, #item-5679").hasClass("hover")) {
       $("#item-5677, #item-5679").removeClass("hover");
-      $(
-        "#item-5677 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns"
-      ).removeClass("show");
+      $("#item-5677 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns").removeClass("show");
     }
   });
   $("#item-5679").on("mouseover", function () {
     $(this).addClass("hover");
     $("#item-5679 .secondary-nav-inner-dropdowns").addClass("show");
-    $(".arrow").css({
-      transform: "translate(345px, 32px) rotate(45deg)",
-      transition: "all .5s ease-in-out",
-      display: "block",
-    });
     if ($("#item-5678, #item-5677").hasClass("hover")) {
       $("#item-5678, #item-5677").removeClass("hover");
-      $(
-        "#item-5678 .secondary-nav-inner-dropdowns, #item-5677 .secondary-nav-inner-dropdowns"
-      ).removeClass("show");
+      $("#item-5678 .secondary-nav-inner-dropdowns, #item-5677 .secondary-nav-inner-dropdowns").removeClass("show");
     }
   });
   $("#item-5677, #item-5678, #item-5679").on("mouseleave", function () {
-    $(".arrow").css({
-      display: "none",
-    });
-    $(
-      "#item-5678 .secondary-nav-inner-dropdowns, #item-5677 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns"
-    ).removeClass("show");
+    $("#item-5678 .secondary-nav-inner-dropdowns, #item-5677 .secondary-nav-inner-dropdowns, #item-5679 .secondary-nav-inner-dropdowns").removeClass("show");
   });
 
-  // if ($("#darkSwitch").hasClass("checked")) {
-  //   $("#darkSwitch").removeClass("checked");
-  // }
   $("#darkSwitch").on("click", function () {
     $("#darkSwitch").toggleClass("checked");
     if ($("#darkSwitch").hasClass("checked")) {

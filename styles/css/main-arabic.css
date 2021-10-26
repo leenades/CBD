@@ -15,7 +15,11 @@
   right: unset; }
 
 .banner-center .icons > span {
-  margin-left: 24px; }
+  margin-left: 24px;
+  margin-right: 24px; }
+  .banner-center .icons > span > img {
+    margin-left: 8px;
+    margin-right: 0; }
 
 .js-latest-offers-slider-styles .image > h4 {
   font-size: 16px; }
@@ -44,7 +48,48 @@
 .modal-body-col-1 .signup-content .sign-up-input .iti {
   direction: ltr; }
 
+.newsletter-btn {
+  text-align: left; }
+
+.footer-section .footer-row .col .footer-list li {
+  padding: 18px 0px 18px 40px; }
+
+span.label::before {
+  left: unset;
+  right: 0; }
+
+span.label::after {
+  left: 0;
+  right: 2px; }
+
+input.checked + span.label::after {
+  right: 21px;
+  left: 0; }
+
+.dark-switch-text {
+  margin-left: 0;
+  margin-right: 10px; }
+
 @media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    right: 0;
+    left: unset; }
+  .fa-angle-right {
+    margin-right: 6rem;
+    margin-left: 0;
+    transform: rotateY(180deg); }
+  #item-5679:hover ~ .arrow {
+    transform: translate(35px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    display: block !important; }
+  #item-5678:hover ~ .arrow {
+    transform: translate(200px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important; }
+  #item-5677:hover ~ .arrow {
+    transform: translate(345px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important; }
   .main-header .main-header-contents .header-title {
     margin-bottom: 48px; }
     .main-header .main-header-contents .header-title h1 {
@@ -84,6 +129,8 @@
   .dropdown-inner-menu .dropdown-inner-menu-item {
     margin-left: 0;
     margin-right: -20px; }
+    .dropdown-inner-menu .dropdown-inner-menu-item > a {
+      text-align: right; }
   .dropdown-inner-menu-item a span > i {
     transform: rotateY(180deg); }
   .image-and-title-container {

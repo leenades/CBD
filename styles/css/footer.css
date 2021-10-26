@@ -200,9 +200,4 @@ input.checked + span.label::after {
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #ffffff;
-    cursor: default; }
-  .footer-section .footer-row-two .footer-col-one div p {
-    text-align: left; }
-  .footer-section .footer-row-two .footer-col-two div p {
-    text-align: right;
-    margin-right: 15px; } }
+    cursor: default; } }

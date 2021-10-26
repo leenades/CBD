@@ -107,6 +107,82 @@
 }
 
 @media screen and (min-width: 768px) {
+  .login-container {
+    display: none;
+  }
+  .login-btn:hover ~ .login-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+    width: 350px;
+    margin-left: -50px;
+    padding: 64px 24px 24px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 13px 1px #00000026;
+  }
+  .login-container {
+    h6 {
+      color: #738794;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    &:hover {
+      display: block;
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      right: 0;
+      width: 350px;
+      margin-left: -50px;
+      padding: 64px 24px 24px 24px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 13px 1px #00000026;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 16px;
+      .login-item {
+        padding-top: 4px;
+        padding-bottom: 16px;
+        &:first-child {
+          border-bottom: 1px solid #dde0e9;
+        }
+        &:last-child {
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+  .login-option-item {
+    display: flex;
+    align-items: center;
+    h6 {
+      margin-left: 16px;
+    }
+  }
+  // item products
+  #item-5677:hover ~ .arrow {
+    transform: translate(50px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    display: block !important;
+  }
+  #item-5678:hover ~ .arrow {
+    transform: translate(200px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important;
+  }
+  #item-5679:hover ~ .arrow {
+    transform: translate(322px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important;
+  }
   .arrow {
     width: 20px;
     height: 20px;
@@ -148,6 +224,7 @@
       display: flex;
       justify-content: right;
       align-items: center;
+      position: relative;
     }
   }
   .inner-nav-item-image-container {
@@ -325,11 +402,6 @@
       font-size: 13px;
       line-height: 16px;
       color: rgba(2, 2, 5, 0.6);
-    }
-  }
-  .fa-angle-right {
-    &:before {
-      margin-left: 6rem;
     }
   }
 }
