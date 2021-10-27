@@ -297,9 +297,6 @@ section {
   background: #f2f2f7;
   transition: all .5s ease-in-out;
 }
-section.lightback-ground {
-  background: #020205;
-}
 .main-header.bg-neutral .main-header-contents .header-title h1,
 .main-header.bg-neutral .main-header-contents .header-title p,
 .main-header.bg-neutral .main-header-contents .video-link a {
@@ -441,22 +438,7 @@ section.image-container-section {
     bottom: 0;
     border-radius: 16px 16px 0 0;
   }
-  .text-container {
-    .text-c_heading {
-      font-size: 8.1708px;
-      line-height: 11px;
-      letter-spacing: 0.13618px;
-    }
-    .text-c_title {
-      font-size: 28px;
-      line-height: 36px;
-      letter-spacing: 0.3px;
-    }
-    .text-c_body {
-      font-size: 12.2562px;
-      line-height: 19px;
-    }
-  }
+
   .online-pay-paragraph {
     font-size: 16px;
     line-height: 24px;

@@ -66,12 +66,35 @@ input.checked + span.label::after {
   right: 21px;
   left: 0; }
 
-.dark-switch-text {
-  margin-left: 0;
-  margin-right: 10px; }
+.btn-white {
+  margin-right: 0;
+  margin-left: 16px; }
+
+.slick-dotted .slick-dots {
+  direction: rtl; }
+
+.btn-container {
+  margin-bottom: 21px; }
+
+.faq-accordion-section .accordion .accordion-item .accordion-header > .accordion-button {
+  text-align: right; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .dark-switch-text {
+    margin-right: 3rem;
+    margin-left: 0; } }
 
 @media screen and (min-width: 768px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  .dark-switch-text {
+    margin-left: 0;
+    margin-right: 10px; }
+  .card .card-body .value-amount {
+    margin-left: 0;
+    margin-right: 16px; }
+  .login-option-item h6 {
+    margin-left: 0;
+    margin-right: 16px; }
+  .navbar-primary.navbar-expand-lg .navbar-nav .dropdown-menu {
     right: 0;
     left: unset; }
   .fa-angle-right {

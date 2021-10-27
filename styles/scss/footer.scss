@@ -201,6 +201,13 @@ input.checked {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .form-select {
+    &:hover {
+      .dropdown-content {
+        width: 100%;
+      }
+    }
+  }
   .footer-section {
     .footer-list.collapse {
       display: none;

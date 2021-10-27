@@ -98,7 +98,7 @@
     }
   }
 }
-span.label{
+span.label {
   &::before {
     left: unset;
     right: 0;
@@ -112,12 +112,53 @@ input.checked + span.label::after {
   right: 21px;
   left: 0;
 }
-.dark-switch-text {
-  margin-left: 0;
-  margin-right: 10px;
+.btn-white {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.slick-dotted {
+  .slick-dots {
+    direction: rtl;
+  }
+}
+.btn-container {
+  margin-bottom: 21px;
+}
+.faq-accordion-section {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        > .accordion-button {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .dark-switch-text {
+    margin-right: 3rem;
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 768px) {
-  .navbar-expand-lg {
+  .dark-switch-text {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .card .card-body {
+    .value-amount {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+  }
+  .login-option-item {
+    h6 {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+  }
+  .navbar-primary.navbar-expand-lg {
     .navbar-nav {
       .dropdown-menu {
         right: 0;
@@ -125,27 +166,27 @@ input.checked + span.label::after {
       }
     }
   }
-  .fa-angle-right{
-      margin-right: 6rem;
-      margin-left: 0;
-      transform: rotateY(180deg);
+  .fa-angle-right {
+    margin-right: 6rem;
+    margin-left: 0;
+    transform: rotateY(180deg);
   }
-    // item products
-    #item-5679:hover ~ .arrow {
-      transform: translate(35px, 32px) rotate(45deg);
-      transition: all 0.5s ease-in-out;
-      display: block !important;
-    }
-    #item-5678:hover ~ .arrow {
-      transform: translate(200px, 32px) rotate(45deg);
-      transition: all 0.5s ease-in-out 0s;
-      display: block !important;
-    }
-    #item-5677:hover ~ .arrow {
-      transform: translate(345px, 32px) rotate(45deg);
-      transition: all 0.5s ease-in-out 0s;
-      display: block !important;
-    }
+  // item products
+  #item-5679:hover ~ .arrow {
+    transform: translate(35px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    display: block !important;
+  }
+  #item-5678:hover ~ .arrow {
+    transform: translate(200px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important;
+  }
+  #item-5677:hover ~ .arrow {
+    transform: translate(345px, 32px) rotate(45deg);
+    transition: all 0.5s ease-in-out 0s;
+    display: block !important;
+  }
   .main-header {
     .main-header-contents {
       .header-title {

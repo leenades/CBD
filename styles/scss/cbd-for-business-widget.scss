@@ -23,6 +23,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
   .cbd-for-business-section {
     .row {
       .cbd-for-business-section {
@@ -39,6 +40,9 @@
         > p {
           text-align: center;
         }
+      }
+      .cbd-for-business-btn {
+        text-align: center;
       }
     }
   }

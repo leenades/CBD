@@ -153,6 +153,8 @@ input.checked + span.label::after {
   color: rgba(255, 255, 255, 0.3); }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .form-select:hover .dropdown-content {
+    width: 100%; }
   .footer-section .footer-list.collapse {
     display: none; }
   .footer-section .footer-list.collapse.show {

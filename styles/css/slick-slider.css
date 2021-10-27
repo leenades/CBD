@@ -174,43 +174,6 @@ section.latest-offers-section {
 .view-all {
   margin-right: 2rem; }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .img-container-2 {
-    margin: -16px -11px; }
-  .distinct-slider-container {
-    width: 234px !important;
-    height: 100%;
-    min-height: 352px;
-    border-radius: 22px;
-    padding: 16px 11px;
-    position: relative; }
-  .sliders-title-arrows div .slider-title > h3 {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.3px; }
-  .js-benefits-slider-styles {
-    justify-content: center; }
-    .js-benefits-slider-styles .image {
-      margin-bottom: 24px; }
-  .js-latest-offers-slider-styles {
-    justify-content: space-between; }
-    .js-latest-offers-slider-styles .image {
-      margin-bottom: 3rem;
-      width: 151px;
-      height: 154px; }
-      .js-latest-offers-slider-styles .image > img {
-        width: 100%;
-        height: 100%; }
-  .view-all-container {
-    text-align: center;
-    margin-top: 38px; }
-  .js-awards-slider-styles .slick-list .slick-track .slick-slide > div {
-    margin-right: 30px;
-    margin-left: 30px; }
-  .js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
-    margin-right: 30px;
-    margin-left: 30px; } }
-
 .text-container .text-c_heading {
   font-style: normal;
   font-weight: normal;
@@ -251,6 +214,56 @@ section.latest-offers-section {
   left: 0;
   width: 100%;
   z-index: 0; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .img-container-2 {
+    margin: -16px -11px; }
+  .distinct-slider-container {
+    width: 234px !important;
+    height: 100%;
+    min-height: 352px;
+    border-radius: 22px;
+    padding: 16px 11px;
+    position: relative; }
+  .sliders-title-arrows div .slider-title > h3 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.3px; }
+  .js-benefits-slider-styles {
+    justify-content: center; }
+    .js-benefits-slider-styles .image {
+      margin-bottom: 24px; }
+  .js-latest-offers-slider-styles {
+    justify-content: space-between; }
+    .js-latest-offers-slider-styles .image {
+      margin-bottom: 3rem;
+      width: 151px;
+      height: 154px; }
+      .js-latest-offers-slider-styles .image > img {
+        width: 100%;
+        height: 100%; }
+  .view-all-container {
+    text-align: center;
+    margin-top: 38px; }
+  .js-awards-slider-styles .slick-list .slick-track .slick-slide > div {
+    margin-right: 30px;
+    margin-left: 30px; }
+  .js-testimonials-slider-styles .slick-list .slick-track .slick-slide > div {
+    margin-right: 30px;
+    margin-left: 30px; }
+  .text-container .text-c_heading {
+    font-size: 8.1708px;
+    line-height: 11px;
+    letter-spacing: 0.13618px; }
+  .text-container .text-c_title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.3px; }
+  .text-container .text-c_body {
+    font-size: 12.2562px;
+    line-height: 19px; }
+  .img-container-sliders picture img {
+    margin: 0 auto; } }
 
 @media screen and (min-width: 768px) {
   .view-all-container {

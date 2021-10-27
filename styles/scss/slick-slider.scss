@@ -257,7 +257,54 @@ section.latest-offers-section {
 .view-all {
   margin-right: 2rem;
 }
+.text-container {
+  .text-c_heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: rgba(2, 2, 5, 0.6);
+  }
 
+  .text-c_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    color: #020205;
+  }
+
+  .text-c_body {
+    font-family: Euclid Square;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #020205;
+  }
+}
+
+.img-container-1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.img-container-2 {
+  margin: -24px -16px;
+}
+
+.img-container-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .img-container-2 {
     margin: -16px -11px;
@@ -327,54 +374,29 @@ section.latest-offers-section {
       }
     }
   }
-}
-.text-container {
-  .text-c_heading {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    color: rgba(2, 2, 5, 0.6);
+  .text-container {
+    .text-c_heading {
+      font-size: 8.1708px;
+      line-height: 11px;
+      letter-spacing: 0.13618px;
+    }
+    .text-c_title {
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: 0.3px;
+    }
+    .text-c_body {
+      font-size: 12.2562px;
+      line-height: 19px;
+    }
   }
-
-  .text-c_title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0.3px;
-    color: #020205;
+  .img-container-sliders  {
+    picture{
+      img {
+        margin: 0 auto;
+      }
+    }
   }
-
-  .text-c_body {
-    font-family: Euclid Square;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #020205;
-  }
-}
-
-.img-container-1 {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-.img-container-2 {
-  margin: -24px -16px;
-}
-
-.img-container-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .view-all-container {

@@ -4,7 +4,8 @@
   margin-bottom: 24px; }
   .card .card-header {
     background-color: transparent;
-    border-bottom: 0; }
+    border-bottom: 0;
+    padding: 0; }
 
 .card-header h6 {
   text-align: center;
@@ -17,9 +18,16 @@
 
 .card .card-body {
   display: inherit;
-  justify-content: space-between;
   align-items: center;
-  padding: 0; }
+  padding-left: 0;
+  padding-right: 0; }
+  .card .card-body .value-amount {
+    display: flex;
+    align-items: baseline; }
+    .card .card-body .value-amount h6 {
+      margin: 0; }
+    .card .card-body .value-amount p {
+      margin: 0; }
   .card .card-body a {
     color: #020205; }
     .card .card-body a i {
@@ -33,6 +41,10 @@
     line-height: 40px;
     color: #020205; }
 
+.card-footer {
+  padding-left: 0;
+  padding-right: 0; }
+
 .counter::-webkit-outer-spin-button, .counter::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
@@ -44,6 +56,7 @@
   font-size: 32px;
   line-height: 40px;
   color: #020205;
+  background-color: transparent;
   font-style: normal;
   font-weight: bold;
   outline: 0; }
@@ -88,3 +101,22 @@
     font-size: 12px;
     line-height: 16px;
     color: #ffffff; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card .card-body.linear-bg-card {
+    align-items: flex-start;
+    flex-direction: column; }
+  .card .card-footer {
+    padding: 0; }
+  .card.card.card-col-two .card-body h6 {
+    display: inline; }
+  .card.card.card-col-two .card-body p {
+    display: inline; }
+  .counter-row-one {
+    flex-direction: column; }
+  .counter-row-two {
+    flex-direction: column; } }
+
+@media screen and (min-width: 768px) {
+  .card .card-body .value-amount {
+    margin-left: 16px; } }

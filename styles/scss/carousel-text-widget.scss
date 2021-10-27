@@ -33,9 +33,6 @@
     align-items: flex-start;
   }
   .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     > span {
       display: flex;
       justify-content: flex-start;
@@ -119,6 +116,21 @@
   .title-tag-styles {
     flex-direction: column;
   }
+  .banner-center {
+    .icons {
+      > span {
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
+  .banner-center {
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

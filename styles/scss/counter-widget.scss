@@ -6,6 +6,7 @@
   .card-header {
     background-color: transparent;
     border-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -21,9 +22,19 @@
 
 .card .card-body {
   display: inherit;
-  justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  .value-amount {
+    display: flex;
+    align-items: baseline;
+    h6 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
 
   a {
     color: #020205;
@@ -43,7 +54,10 @@
     color: #020205;
   }
 }
-
+.card-footer {
+  padding-left: 0;
+  padding-right: 0;
+}
 .counter {
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -60,6 +74,7 @@
     font-size: 32px;
     line-height: 40px;
     color: #020205;
+    background-color: transparent;
     font-style: normal;
     font-weight: bold;
     outline: 0;
@@ -126,6 +141,36 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .card {
+    .card-body.linear-bg-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .card-footer {
+      padding: 0;
+    }
+  }
+  .card.card.card-col-two {
+    .card-body {
+      h6 {
+        display: inline;
+      }
+      p {
+        display: inline;
+      }
+    }
+  }
+  .counter-row-one {
+    flex-direction: column;
+  }
+  .counter-row-two {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 768px) {
+  .card .card-body {
+    .value-amount {
+      margin-left: 16px;
+    }
+  }
 }
