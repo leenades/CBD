@@ -9,8 +9,9 @@ $(document).ready(function () {
       );
       $(".products-header-title").addClass("products-header-title-dark-styles");
       $(".whiteFontDark").addClass("white-font");
-      $(".whiteFontDarkSymbol").addClass("white-font");
-      $(".dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").addClass("dark-style-bg");
+      $(".whiteFontDarkSymbol, .arrowsDark").addClass("white-font");
+      $(".dropdown-menu, .dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").addClass("dark-style-bg");
+      $('.darkModeBG').addClass('dark-styles');
     } else {
       $(".addLightBG").removeClass("lightback-ground");
       $(".btn-white").removeClass("btn-white-dark-styles");
@@ -21,8 +22,9 @@ $(document).ready(function () {
         "products-header-title-dark-styles"
       );
       $(".whiteFontDark").removeClass("white-font");
-      $(".whiteFontDarkSymbol").removeClass("white-font");
-      $(".dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").removeClass("dark-style-bg");
+      $(".whiteFontDarkSymbol, .arrowsDark").removeClass("white-font");
+      $(".dropdown-menu, .dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").removeClass("dark-style-bg");
+      $('.darkModeBG').removeClass('dark-styles');
     }
   });
 });

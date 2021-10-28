@@ -20,3 +20,26 @@ section.lightback-ground {
 .dark-style-bg{
 background-color: #181821 !important;
 }
+.arrowsDark.white-font {
+  button {
+    &::before {
+      color: #fff;
+    }
+  }
+}
+.darkModeBG.dark-styles {
+  background-color: #181821;
+  box-shadow: -4px 0px 32px 0px #FFFFFF1A;
+  #manageCookies {
+    background-color: #2B2B3B;
+    color: #fff;
+  }
+  #confirmPreferences {
+    color: #020205;
+  }
+}
+.lightback-ground {
+  .insert-tag-styles {
+    background-color: #181821;
+  }
+}

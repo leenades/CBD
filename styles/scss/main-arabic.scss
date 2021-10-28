@@ -135,7 +135,21 @@ input.checked + span.label::after {
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px){
+.checkbox-container {
+  input {
+    margin-left: 11px;
+    margin-right: 0;
+  }
+}
+.cookie-image-text img {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.slash-1, .slash-2 {
+  left: 100%;
+  right: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .dark-switch-text {
     margin-right: 3rem;
     margin-left: 0;
@@ -187,7 +201,7 @@ input.checked + span.label::after {
     transition: all 0.5s ease-in-out 0s;
     display: block !important;
   }
-  .main-header {
+  .main-header.bg-neutral {
     .main-header-contents {
       .header-title {
         h1 {
@@ -204,6 +218,18 @@ input.checked + span.label::after {
         margin-bottom: 48px;
       }
     }
+    .navbar-secondary {
+      .menu-list-left {
+        .nav-item {
+          .nav-link {
+            color: #020205;
+          }
+        }
+      }
+    }
+  }
+  .main-header.bg-neutral.lightback-ground .nav-link {
+    color: #fff;
   }
   .navbar-primary {
     .menu-list-right {

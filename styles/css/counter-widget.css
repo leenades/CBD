@@ -103,6 +103,8 @@
     color: #ffffff; }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .counter-row {
+    flex-direction: column; }
   .card .card-body.linear-bg-card {
     align-items: flex-start;
     flex-direction: column; }

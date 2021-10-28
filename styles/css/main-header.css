@@ -42,6 +42,12 @@
 .fixed-nav-secondary.navbar-secondary .menu-list-left .nav-item .nav-link {
   color: #020205; }
 
+.bg-neutral.lightback-ground .navbar-secondary .menu-list-left .nav-item .nav-link {
+  color: #fff !important; }
+
+.bg-neutral.lightback-ground .fixed-nav-secondary.navbar-secondary .menu-list-left .nav-item .nav-link {
+  color: #020205 !important; }
+
 .dropdown-inner-menu .dropdown-inner-menu-item.current-item > a {
   color: #02b8d1; }
 
