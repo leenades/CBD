@@ -435,9 +435,7 @@ section.image-container-section {
     display: none !important; }
   .navbar-secondary .menu-list-left .secondary-nav-inner-dropdowns {
     left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto; } }
+    right: 0; } }
 
 @media screen and (min-width: 768px) {
   .btn-locations .col .btn {
