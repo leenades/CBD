@@ -87,7 +87,8 @@ input.checked + span.label::after {
   margin-right: 0;
   margin-left: 8px; }
 
-.slash-1, .slash-2 {
+.slash-1,
+.slash-2 {
   left: 100%;
   right: 0; }
 
@@ -109,7 +110,7 @@ input.checked + span.label::after {
   .navbar-primary.navbar-expand-lg .navbar-nav .dropdown-menu {
     right: 0;
     left: unset; }
-  .fa-angle-right {
+  .nav-item.dropdown .dropdown-menu .dropdown-item .fa-angle-right {
     margin-right: 6rem;
     margin-left: 0;
     transform: rotateY(180deg); }
@@ -165,11 +166,8 @@ input.checked + span.label::after {
       transform: rotateY(180deg); }
   .dropdown-inner-menu-title h6 {
     text-align: right; }
-  .dropdown-inner-menu .dropdown-inner-menu-item {
-    margin-left: 0;
-    margin-right: -20px; }
-    .dropdown-inner-menu .dropdown-inner-menu-item > a {
-      text-align: right; }
+  .dropdown-inner-menu .dropdown-inner-menu-item > a {
+    text-align: right; }
   .dropdown-inner-menu-item a span > i {
     transform: rotateY(180deg); }
   .image-and-title-container {

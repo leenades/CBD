@@ -22,11 +22,13 @@
         font-style: normal;
         font-weight: bold;
         color: #ffffff;
+        margin-bottom: 0;
       }
       p {
         font-style: normal;
         font-weight: normal;
         color: #ffffff;
+        margin-bottom: 0;
       }
     }
   }
@@ -89,7 +91,7 @@
     .main-header-contents {
       z-index: 9;
       .header-title {
-        margin-bottom: 56px;
+        margin-bottom: 32px;
         h1 {
           font-size: 36px;
           line-height: 44px;
@@ -135,6 +137,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .inner-nav-item-image-container {
+    img {
+      width: 100%;
+    }
+  }
   .login-container {
     display: none;
   }
@@ -306,7 +313,7 @@
     }
     .main-header-contents {
       .header-title {
-        margin-bottom: 56px;
+        margin-bottom: 48px;
         h1 {
           font-size: 44px;
           line-height: 60px;
@@ -359,6 +366,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 8px 30px;
+        .fa-angle-right {
+          margin-left: 6rem;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -437,6 +448,7 @@
             div {
               display: flex;
               align-items: center;
+              justify-content: space-between;
             }
           }
         }

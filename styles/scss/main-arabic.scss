@@ -145,7 +145,8 @@ input.checked + span.label::after {
   margin-right: 0;
   margin-left: 8px;
 }
-.slash-1, .slash-2 {
+.slash-1,
+.slash-2 {
   left: 100%;
   right: 0;
 }
@@ -180,10 +181,16 @@ input.checked + span.label::after {
       }
     }
   }
-  .fa-angle-right {
-    margin-right: 6rem;
-    margin-left: 0;
-    transform: rotateY(180deg);
+  .nav-item.dropdown {
+    .dropdown-menu {
+      .dropdown-item {
+        .fa-angle-right {
+          margin-right: 6rem;
+          margin-left: 0;
+          transform: rotateY(180deg);
+        }
+      }
+    }
   }
   // item products
   #item-5679:hover ~ .arrow {
@@ -280,8 +287,6 @@ input.checked + span.label::after {
   }
   .dropdown-inner-menu {
     .dropdown-inner-menu-item {
-      margin-left: 0;
-      margin-right: -20px;
       > a {
         text-align: right;
       }

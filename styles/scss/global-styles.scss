@@ -20,7 +20,7 @@ section {
   }
 }
 .button-container {
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 .btn-white {
   border-radius: 12px;
@@ -371,6 +371,9 @@ section.image-container-section {
   background-color: #fff;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .button-container {
+    margin-bottom: 44px;
+  }
   .location-container {
     background-image: url("../../Assets/Images/Image/mob/skyscraper_mobile.webp");
   }
