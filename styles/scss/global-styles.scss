@@ -16,6 +16,7 @@ body {
 }
 section {
   &:not(.main-header) {
+    background-color: #f2f2f7;
     padding: 100px 0;
   }
 }
@@ -249,7 +250,7 @@ section {
 .insert-tag-styles {
   background: #000;
   padding: 8px;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 12px;
   font-weight: bold;
   line-height: 16px;
@@ -367,7 +368,7 @@ section.image-container-section {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.newsletter {
+section.newsletter {
   background-color: #fff;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -454,11 +455,7 @@ section.image-container-section {
     margin-right: 12px;
     margin-left: 12px;
   }
-  .online-pay-section {
-    .online-pay-container {
-      background-image: url(../../Assets/Images/Image/mob/linear-background_mobile.webp);
-    }
-  }
+
   .onlinepay-image-container {
     flex-direction: column;
   }
@@ -520,7 +517,6 @@ section.image-container-section {
   }
   .online-pay-section {
     .online-pay-container {
-      background-image: url("../../Assets/Images/Image/linear-background.webp");
       > img {
         position: absolute;
         left: 0;

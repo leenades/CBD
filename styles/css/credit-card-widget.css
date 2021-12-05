@@ -1,8 +1,8 @@
-.credit-card-for-you-section {
+section.credit-card-for-you-section {
   background: #181821; }
-  .credit-card-for-you-section .row {
+  section.credit-card-for-you-section .row {
     text-align: center; }
-  .credit-card-for-you-section .text-row .col div > h3 {
+  section.credit-card-for-you-section .text-row .col div > h3 {
     font-style: normal;
     font-weight: bold;
     font-size: 44px;

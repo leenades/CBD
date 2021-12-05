@@ -575,13 +575,7 @@
     <!-- main header with video background -->
 
     <section class="main-header" id="mainHeader">
-      <nav
-        class="
-          navbar navbar-expand-lg navbar-secondary
-          d-none d-lg-flex
-          justify-content-between
-        "
-      >
+      <nav class="navbar navbar-expand-lg navbar-secondary d-none d-lg-flex justify-content-between">
         <div class="container">
           <div class="menu-list-left">
             <a
@@ -1459,7 +1453,6 @@
                 Login
               </button>
               <div class="login-container">
-                <h6>Login</h6>
                 <ul>
                   <li class="login-item">
                     <a href="#" aria-label="">
@@ -4135,9 +4128,7 @@
         <div class="row">
           <div class="col slider-column-spacing">
             <div class="js-slider-distinct w-100">
-              <div
-                class="distinct-slider-container distinct-slider-container-1"
-              >
+              <div class="distinct-slider-container distinct-slider-container-1">
                 <div class="text-container">
                   <div class="text-c_heading"><h6 class="whiteFontDark">Heading</h6></div>
                   <div class="text-c_title"><h5 class="whiteFontDark">Title here</h5></div>
@@ -4168,9 +4159,7 @@
                   <button class="btn btn-blue-darktext">CTA One</button>
                 </div>
               </div>
-              <div
-                class="distinct-slider-container distinct-slider-container-2"
-              >
+              <div class="distinct-slider-container distinct-slider-container-2">
                 <div class="img-container-sliders img-container-2">
                   <picture>
                     <source
@@ -4201,9 +4190,7 @@
                   <button class="btn btnblue-transparent-bg">CTA One</button>
                 </div>
               </div>
-              <div
-                class="distinct-slider-container distinct-slider-container-3"
-              >
+              <div class="distinct-slider-container distinct-slider-container-3" >
                 <div class="img-container-sliders img-container-3">
                   <picture>
                     <source
@@ -4620,6 +4607,7 @@
         </div>
       </div>
     </section>
+
     <section class="benefits-and-rewards-section addLightBG">
       <div class="container">
         <div
@@ -4694,6 +4682,7 @@
         </div>
       </div>
     </section>
+
     <section class="latest-offers-section addLightBG">
       <div class="container">
         <div
@@ -4788,6 +4777,7 @@
         </div>
       </div>
     </section>
+    
     <section class="credit-card-for-you-section">
       <div class="container">
         <div class="row text-row">
@@ -6156,21 +6146,23 @@
               </p>
             </div>
           </div>
-          <div class="col-md-7 col col-email-btn">
-            <div class="email-container">
-              <label for="email">Email</label><br />
-              <input
+          <div class="col-md-7 col ">
+            <form method="" action="" class="col-email-btn">
+              <div class="email-container">
+                <label for="email">Email</label><br />
+                <input
                 type="email"
                 name="email"
                 class="newsletter-email"
                 id="email"
                 placeholder="Enter email address"
-              />
-            </div>
-            <div class="newsletter-btn">
-              <button class="btn btn-blue-darktext">CTA one</button>
-              <button class="btn btndark-transparent-bg mx-1 whiteFontDark">CTA two</button>
-            </div>
+                />
+              </div>
+              <div class="newsletter-btn">
+                <a type="submit" href="#" aria-label="" title="" class="btn btn-blue">CTA one</a>
+                <a href="#" aria-label="" title="" class="btn btndark-transparent-bg mx-1 whiteFontDark">CTA two</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -6190,7 +6182,7 @@
             </div>
             <div class="dropdown-lg">
               <div class="dropdown-container">
-                <div class="form-select">
+                <div class="dropdown-toggle">
                   <div class="hidden-option-container">
                     <a class="dropdown-option-hidden"
                       ><img

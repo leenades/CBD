@@ -1,13 +1,13 @@
-.cbd-for-business-section {
+section.cbd-for-business-section {
   background: #181821; }
-  .cbd-for-business-section .texts-container > h3 {
+  section.cbd-for-business-section .texts-container > h3 {
     font-style: normal;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 24px;
     font-size: 44px;
     line-height: 48px; }
-  .cbd-for-business-section .texts-container span > p {
+  section.cbd-for-business-section .texts-container span > p {
     font-size: 18px;
     color: #fff;
     line-height: 28px;

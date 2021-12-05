@@ -5,14 +5,13 @@
     list-style: none;
     padding: 0; }
     .footer-section .footer-row .col .footer-list li {
-      padding: 18px 40px 18px 0; }
+      padding: 13px 10px; }
       .footer-section .footer-row .col .footer-list li > a {
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.7);
         text-decoration: none; }
   .footer-section .footer-row .col .social-media a > i {
     color: #fff;
@@ -20,7 +19,7 @@
     margin-right: 32px; }
   .footer-section .footer-row .first-column > div {
     margin-bottom: 50px; }
-  .footer-section .footer-row-two .col div p {
+  .footer-section .footer-row-two div p {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -51,7 +50,8 @@ div.switch-color {
 label.label-switch {
   position: relative;
   min-width: 52px;
-  min-height: 32px; }
+  min-height: 32px;
+  margin-bottom: 0; }
   label.label-switch input {
     opacity: 0;
     position: absolute;
@@ -94,10 +94,9 @@ input.checked + span.label::after {
   content: "";
   left: 21px; }
 
-.form-select {
+.dropdown-container .dropdown-toggle {
   border: 1px solid #4c4c54;
   background: transparent;
-  background-image: url(../../Assets/Images/Icons/dropdownCaret.svg);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 10px 5px;
@@ -106,16 +105,20 @@ input.checked + span.label::after {
   width: 283px;
   height: 48px;
   position: relative; }
-  .form-select:hover .dropdown-content {
+  .dropdown-container .dropdown-toggle:hover .dropdown-content {
     display: block; }
-  .form-select .hidden-option-container {
+  .dropdown-container .dropdown-toggle::after {
+    right: 1rem;
+    top: 50%;
+    position: absolute; }
+  .dropdown-container .dropdown-toggle .hidden-option-container {
     display: flex;
     justify-content: start;
     align-items: center;
     height: 100%; }
-    .form-select .hidden-option-container a img {
+    .dropdown-container .dropdown-toggle .hidden-option-container a img {
       margin: 0 19px; }
-    .form-select .hidden-option-container > a {
+    .dropdown-container .dropdown-toggle .hidden-option-container > a {
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -152,8 +155,17 @@ input.checked + span.label::after {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.3); }
 
+.footer-section .footer-row .col .footer-title-container h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  cursor: default; }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .form-select:hover .dropdown-content {
+  .dropdown-toggle:hover .dropdown-content {
     width: 100%; }
   .footer-section .footer-list.collapse {
     display: none; }
@@ -162,7 +174,6 @@ input.checked + span.label::after {
   .footer-section .footer-row {
     flex-direction: column; }
     .footer-section .footer-row .first-column > div {
-      justify-content: center;
       margin-bottom: 32px;
       text-align: center; }
     .footer-section .footer-row .col .social-media a > i {
@@ -175,31 +186,17 @@ input.checked + span.label::after {
     display: none; }
   .mob-title[aria-expanded="false"] .navbar-toggler .fa-angle-up {
     display: none; }
-  .form-select {
+  .dropdown-toggle {
     margin: 0;
     width: 100%; }
   .dark-switch-text {
     margin-left: 3rem; }
-  .footer-title-container .mob-title .footer-subtitles {
+  .footer-title-container .footer-subtitles {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    cursor: default;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0; }
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #ffffff; }
   .footer-row .col {
     padding: 0 30px; } }
-
-@media screen and (min-width: 768px) {
-  .footer-section .footer-row .col .footer-title-container h6 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    cursor: default; } }
