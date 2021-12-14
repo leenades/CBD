@@ -12,6 +12,7 @@ $(document).ready(function () {
       $(".whiteFontDarkSymbol, .arrowsDark").addClass("white-font");
       $(".dropdown-menu, .dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").addClass("dark-style-bg");
       $('.darkModeBG').addClass('dark-styles');
+      $('.btn-blue').addClass("darkFont");
     } else {
       $(".addLightBG").removeClass("lightback-ground");
       $(".btn-white").removeClass("btn-white-dark-styles");
@@ -25,6 +26,8 @@ $(document).ready(function () {
       $(".whiteFontDarkSymbol, .arrowsDark").removeClass("white-font");
       $(".dropdown-menu, .dropdown-menu.secondary-nav-inner-dropdowns, .card , .arrow, .accordion-item, .blurb, .distinct-slider-container").removeClass("dark-style-bg");
       $('.darkModeBG').removeClass('dark-styles');
+      $('.btn-blue').removeClass("darkFont");
+
     }
   });
 });
