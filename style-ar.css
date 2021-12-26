@@ -1,0 +1,30 @@
+section#cph_main_cph_subtop_ctl03_ctl00_ctl00_mediaSliderContainer {
+    margin: 0;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    height: auto;
+    overflow: hidden;
+}
+
+nav#NavWrapper div#main-menu .ucFlexNavigation nav {
+    display: inline-block;
+    width: 100%;
+}
+nav#NavWrapper div#main-menu .ucFlexNavigation nav .container-fluid .nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-width: 100%;
+}
+nav#NavWrapper div#main-menu .ucFlexNavigation nav .container-fluid .nav li {
+    white-space: nowrap;
+    width: 100%;
+}
+nav#NavWrapper div#main-menu .ucFlexNavigation nav .container-fluid .nav li a {
+    min-width: 100%;
+}
