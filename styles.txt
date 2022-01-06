@@ -1,0 +1,15 @@
+
+//wholesale 
+
+#FooterWrapper #FooterLinks li:before {
+    right: 0 !important;
+    left: unset !important;
+    transform: rotate(
+225deg) translateY(-50%) !important;
+}
+
+//business and islami
+#FooterWrapper #FooterLinks .sf_colsOut .sf_colsIn .sfContentBlock li a {
+    background-image: url(/images/default-source/default-album/icon-green-arrow-ar.png) !important;
+	background-repeat: no-repeat !important;
+}
