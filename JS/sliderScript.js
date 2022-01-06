@@ -108,5 +108,26 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".js-slider-top-features").slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    appendArrows: $("#arrowsAppendTopFeatures"),
+    centerMode: true,
+    variableWidth: true,
+    lazyLoad: "ondemand",
+  });
+
+  // $('.slick-track').addClass('start-slider');
+  // $('.slick-track').on('click', function (){
+  //   $(this).removeClass('start-slider');
+  // });
+  // let slickTrack = document.querySelectorAll('.slick-track');
+  // $('.slick-arrow').on('click', function(){
+  //   for(let i = 0; i < slickTrack.length; i++) {
+  //     slickTrack[i].classList.remove('start-slider');
+  //   }
+  // });
   // slick slider js
 });
