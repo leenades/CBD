@@ -19,11 +19,10 @@
 .card .card-body {
   display: inherit;
   align-items: center;
-  padding-left: 0;
-  padding-right: 0; }
+  padding: 0; }
   .card .card-body .value-amount {
     display: flex;
-    align-items: baseline; }
+    align-items: center; }
     .card .card-body .value-amount h6 {
       margin: 0; }
     .card .card-body .value-amount p {
@@ -63,6 +62,7 @@
 
 .card .card-footer {
   border-top: 0;
+  padding-top: 0;
   background-color: transparent; }
 
 .column-card-two {
@@ -80,7 +80,9 @@
     line-height: 36px;
     letter-spacing: 0.3px;
     color: #ffffff;
-    text-align: start; }
+    text-align: start;
+    margin-bottom: 0;
+    padding-top: 1rem; }
   .card.card-col-two .card-body h6 {
     font-style: normal;
     font-weight: bold;
@@ -119,6 +121,28 @@
   .counter-row-two {
     flex-direction: column; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .counter-row {
+    flex-direction: column; }
+    .counter-row .col-md-7 {
+      width: 100%; }
+  .card .card-body.linear-bg-card {
+    align-items: center;
+    flex-direction: row; }
+  .card .card-footer {
+    padding: 0; }
+  .card.card.card-col-two .card-body h6 {
+    display: inline; }
+  .card.card.card-col-two .card-body p {
+    display: inline; }
+  .counter-row-one {
+    flex-direction: row; }
+  .counter-row-two {
+    flex-direction: row; }
+  .column-card-two {
+    margin: auto;
+    width: 100%; } }
+
+@media screen and (min-width: 1200px) {
   .card .card-body .value-amount {
     margin-left: 16px; } }

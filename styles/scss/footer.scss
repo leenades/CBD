@@ -19,7 +19,8 @@
         }
       }
       .social-media {
-        a {
+        a { 
+          color: unset;
           > i {
             color: #fff;
             font-size: 25px;
@@ -136,6 +137,7 @@ input.checked {
     width: 283px;
     height: 48px;
     position: relative;
+    margin: 0 auto;
     &:hover {
       .dropdown-content {
         display: block;
@@ -241,6 +243,8 @@ input.checked {
         > div {
           margin-bottom: 32px;
           text-align: center;
+          justify-content: center;
+          align-items: center;
         }
       }
       .col {
@@ -291,11 +295,18 @@ input.checked {
       line-height: 24px;
       letter-spacing: 0.3px;
       color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
     }
   }
   .footer-row {
     .col {
       padding: 0 30px;
+      .footer-list {
+        li {
+          text-align: center;
+        }
+      }
     }
   }
 }

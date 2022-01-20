@@ -20,7 +20,8 @@
   margin-bottom: 56px; }
   .faq-accordion-section .accordion .accordion-item {
     margin-bottom: 16px;
-    border-radius: 16px; }
+    border-radius: 16px;
+    border: 0 !important; }
     .faq-accordion-section .accordion .accordion-item .accordion-header > .accordion-button {
       font-style: normal;
       font-weight: bold;
@@ -89,6 +90,8 @@
   font-size: 18px;
   line-height: 28px;
   color: #020205; }
+  .accordion-body .accordion-sidebutton {
+    margin-top: 28px; }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .faq-accordion-section .accordion .accordion-item .accordion-header > .accordion-button {

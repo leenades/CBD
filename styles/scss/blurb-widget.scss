@@ -99,3 +99,48 @@
     margin-bottom: 32px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .blurb {
+    border-radius: 16px;
+    padding: 12px 8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 166px;
+    .blurb-heading {
+      h6 {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.0966549px;
+      }
+    }
+    .blurb-title {
+      h5 {
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+    .image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 12px;
+      margin-right: 8px;
+    }
+    .body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 8px 12px;
+      p {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.144982px;
+      }
+    }
+  }
+  .spacing-bottom {
+    margin-bottom: 20px;
+  }
+}

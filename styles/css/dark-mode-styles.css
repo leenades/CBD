@@ -7,6 +7,10 @@ section.lightback-ground {
   .btn-white-dark-styles:hover {
     color: #e5e5e5; }
 
+.form-dark {
+  border: 1px solid rgba(242, 242, 247, 0.24) !important;
+  background-color: transparent !important; }
+
 .whiteFontDarkSymbol.white-font {
   background-color: #020205 !important; }
   .whiteFontDarkSymbol.white-font::before {
@@ -14,6 +18,9 @@ section.lightback-ground {
 
 .whiteFontDark.white-font {
   color: #fff !important; }
+
+.greyFontDark.grey-font {
+  color: rgba(255, 255, 255, 0.7) !important; }
 
 .dark-style-bg {
   background-color: #181821 !important; }

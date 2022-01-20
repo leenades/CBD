@@ -101,19 +101,42 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner-center .banner-center-title {
+    font-size: 30px !important;
+    margin-bottom: 14px !important;
+    line-height: 34px;
+  }
+  .banner-center span > p {
+    font-size: 15px !important;
+    margin-bottom: 28px !important;
+  }
+  .get-started-section {
+    .texts-container {
+      > h3 {
+        font-size: 30px;
+      }
+      span {
+        > p {
+          font-size: 15px;
+        }
+      }
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
   .get-started-section {
     .texts-container {
       > h3 {
         text-align: left;
       }
-      
+
       align-items: flex-start;
     }
   }
   .cbd-investr-section {
     .texts-container {
-  
       align-items: flex-start;
     }
   }

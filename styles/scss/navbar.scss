@@ -24,6 +24,115 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu
+    li
+    > .dropdown.drop-down02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: transparent !important;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02:not(.inner-sub-menu) {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02.inner-sub-menu {
+    position: relative;
+    height: 100%;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02.show {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    div
+    .sub-menu-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #020205;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item#DigitalBanking
+    .dropdown-menu
+    .nav-item
+    .dropdown-menu.sub-menu02:not(.inner-sub-menu) {
+    top: -4rem;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02 > * {
+    padding: 12px 16px;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    > .back-to-styles {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: rgba(2, 2, 5, 0.4);
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    top: -3rem;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    > .back-to-styles
+    span {
+    margin-right: 13px;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02 li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #020205;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    li
+    a:not(.dropdown) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(2, 2, 5, 0.6);
+    text-decoration: none;
+  }
   .navbar-primary.fixed-nav {
     background-color: #e5e5e5;
     box-shadow: 0 6px 13px 1px #00000026;
@@ -98,7 +207,7 @@
           font-size: 18px;
         }
       }
-      .nav-link[aria-expanded="true"] {
+      .nav-link.show[aria-expanded="true"] {
         &::after {
           transform: rotate(-180deg);
         }
@@ -177,7 +286,304 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-primary.navbar-expand-lg {
+    .navbar-nav {
+      .primary-nav-item {
+        .dropdown-menu {
+          position: absolute;
+          padding: 30px;
+          border-radius: 16px;
+          box-shadow: 0px 4px 12px #00000014;
+        }
+      }
+    }
+  }
+  .main-header {
+    .video-background-holder {
+      video {
+        width: unset !important;
+      }
+    }
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu
+    li
+    > .dropdown.drop-down02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: transparent !important;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02:not(.inner-sub-menu) {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02.inner-sub-menu {
+    position: relative;
+    height: 100%;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02.show {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    div
+    .sub-menu-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #020205;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item#DigitalBanking
+    .dropdown-menu
+    .nav-item
+    .dropdown-menu.sub-menu02:not(.inner-sub-menu) {
+    top: -4rem;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02 > * {
+    padding: 12px 16px;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    > .back-to-styles {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: rgba(2, 2, 5, 0.4);
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    top: -3rem;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    > .back-to-styles
+    span {
+    margin-right: 13px;
+  }
+  .mobile-nav-menu .menu-list-left .nav-item .dropdown-menu.sub-menu02 li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #020205;
+  }
+  .mobile-nav-menu
+    .menu-list-left
+    .nav-item
+    .dropdown-menu.sub-menu02
+    li
+    a:not(.dropdown) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(2, 2, 5, 0.6);
+    text-decoration: none;
+  }
+  .navbar-primary.fixed-nav {
+    background-color: #e5e5e5;
+    box-shadow: 0 6px 13px 1px #00000026;
+  }
+  .navbar-primary .container {
+    position: relative;
+  }
+  .navbar-toggler.btn-menu-toggler {
+    color: #000;
+    z-index: 999999;
+    position: absolute;
+    right: 0;
+  }
+  #mainNavBar {
+    position: absolute;
+    width: 85%;
+    height: 100vh;
+    top: -12px;
+    right: -45rem;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    display: block !important;
+    box-shadow: -5px 0px 13px #00000026;
+  }
+  #mainNavBar.show {
+    right: -2rem;
+  }
+  .mobile-nav-menu {
+    .menu-list-left {
+      .nav-item {
+        .dropdown-menu {
+          border: 0;
+          li {
+            > .mobile-inner-item-stlyes {
+              padding: 13px 32px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 20px;
+              letter-spacing: 0.2px;
+              color: #020205;
+              display: block;
+              text-decoration: none;
+            }
+          }
+          .islamic-bank-link {
+            > a {
+              color: #007e8f;
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .login-sign-up-inner-item {
+    padding: 13px 32px;
+  }
+  .menu-list-left {
+    .nav-item {
+      .nav-link {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: #020205;
+        padding: 10px 22px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 18px;
+        }
+      }
+      .nav-link.show[aria-expanded="true"] {
+        &::after {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+  .navbar-primary {
+    .menu-list-right {
+      .nav-item {
+        .nav-link {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 16px;
+          letter-spacing: 0.2px;
+          color: #020205;
+          img {
+            margin-right: 8px;
+          }
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    .navbar-collapse {
+      display: flex !important;
+    }
+  }
+  .mobile-nav-menu {
+    .navbar-nav.menu-list-left {
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+  }
+  .navbar-nav.menu-list-left {
+    margin-top: 0;
+    flex-direction: row;
+  }
+  .navbar-primary {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  ul.menu-list-right {
+    display: none;
+  }
+  .mobile-menu ul.menu-list-right {
+    display: flex;
+    flex-direction: revert;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+  }
+  .modal-backdrop.show {
+    background-color: #e5e5e5;
+    opacity: 1;
+  }
+  .modal-dialog {
+    max-width: 100%;
+    margin: 40px;
+  }
+  .btn-menu-toggler {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    .burger-icon {
+      margin-bottom: 5px;
+      i {
+        &::before {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
   .navbar-primary {
     .menu-list-left {
       .nav-item {

@@ -85,9 +85,12 @@
     }
   }
 }
+.modal.show {
+  background: rgba(0, 0, 0, 0.6);
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .main-header {
-    height: 100vh;
+    height: 80vh;
     .main-header-contents {
       z-index: 9;
       .header-title {
@@ -124,6 +127,7 @@
       font-size: 18px;
       color: #fff;
       font-weight: 600;
+      text-decoration: none;
     }
     a {
       span {
@@ -137,6 +141,29 @@
 }
 
 @media screen and (min-width: 768px) {
+  .navbar-primary {
+    .primary-nav-item.current-item {
+      > a.nav-link {
+        color: #fff !important;
+      }
+    }
+  }
+  .primary-menu-inner-items {
+    &:active {
+      background-color: transparent;
+    }
+    &:hover {
+      .dropdown-item {
+        background-color: transparent;
+        color:#02b8d1 !important;
+        span {
+          .fa-arrow-right {
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+  }
   .main-header.bg-neutral .navbar-secondary .menu-list-left .nav-item .nav-link {
     color: #020205;
   }
@@ -258,7 +285,7 @@
     background-color: #fff;
     position: absolute;
     display: none;
-    z-index: 9999;
+    z-index: -1;
   }
   .modal-backdrop.show {
     background-color: #e5e5e5;
@@ -271,8 +298,9 @@
   .navbar-secondary {
     .menu-list-left {
       .secondary-nav-inner-dropdowns {
-        margin: -10px 50px;
+        margin: 0px 50px;
         border: 0px;
+        z-index: 9;
       }
       display: flex;
       justify-content: left;
@@ -282,6 +310,7 @@
           padding: 18px 20px !important;
           border-radius: 8px;
           color: #fff;
+          z-index: 9;
         }
       }
     }
@@ -325,7 +354,7 @@
     }
   }
   .main-header {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     .video-background-holder {
       video {
@@ -358,6 +387,7 @@
       font-size: 18px;
       color: #fff;
       font-weight: 600;
+      text-decoration: none;
     }
     a {
       span {
@@ -387,9 +417,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 8px 30px;
-        .fa-angle-right {
+        .fa-arrow-right {
           margin-left: 6rem;
           margin-right: 0;
+          opacity: 0;
+          transition: all .3s ease-in-out;
         }
       }
     }
@@ -453,7 +485,7 @@
         letter-spacing: 0.2px;
         color: rgba(2, 2, 5, 0.6);
         cursor: pointer;
-        padding: 12px 20px;
+        padding: 10px 20px;
       }
     }
   }

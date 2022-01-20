@@ -53,6 +53,11 @@
   border-radius: 12px;
   margin-top: 32px; }
 
+.btn-modal.btn-blue {
+  background-color: #02b8d1;
+  color: #fff;
+  background: #02b8d1; }
+
 .modal-body-col-1 .signup-content .sign-up-input .iti {
   display: block; }
 
